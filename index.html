@@ -157,13 +157,35 @@ font-size:30px;font-weight:900;box-shadow:0 15px 40px rgba(0,0,0,.4)
 }
 
 @media(max-width:850px){
-.nav{display:none}
-h1{font-size:39px}
+.header{
+position:relative;
+display:block;
+padding:14px 5%;
+}
+
+.logo{
+font-size:20px;
+margin-bottom:12px;
+}
+
+.nav{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.nav a{
+margin-left:0;
+font-size:14px;
+background:#1f2937;
+padding:8px 10px;
+border-radius:8px;
+}
+
+h1{font-size:36px}
 .hero p{font-size:18px}
 .split{grid-template-columns:1fr}
 .section{padding:65px 5%}
-.header{padding:14px 5%}
-.logo{font-size:20px}
 }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P496SPGLG9"></script>
