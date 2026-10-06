@@ -7,7 +7,7 @@
   <title>Монтаж сэндвич-панелей в Казахстане | Стены и кровля | PANEL MONTAGE</title>
 
   <meta name="description"
-        content="Монтаж стеновых и кровельных сэндвич-панелей в Казахстане. Расчёт объёмов и стоимости, подбор и поставка панелей, доборных элементов и крепежа. Склады, ангары, производственные и коммерческие здания.">
+        content="Монтаж сэндвич-панелей в Казахстане: стеновые и кровельные панели, подбор и поставка материалов, комплектующие, расчёт стоимости и монтаж для складов, ангаров, цехов и коммерческих объектов.">
 
   <meta name="robots" content="index,follow,max-image-preview:large">
 
@@ -26,7 +26,7 @@
         content="Монтаж сэндвич-панелей в Казахстане | PANEL MONTAGE">
 
   <meta property="og:description"
-        content="Стеновые и кровельные сэндвич-панели: расчёт, подбор материалов, поставка и монтаж по Казахстану.">
+        content="Стеновые и кровельные сэндвич-панели, материалы, комплектующие, расчёт стоимости и монтаж по Казахстану.">
 
   <meta property="og:url"
         content="https://panelmontage-site.github.io/panelmontage-site/sandwich-panels.html">
@@ -55,7 +55,7 @@
         "@id":"https://panelmontage-site.github.io/panelmontage-site/sandwich-panels.html#webpage",
         "url":"https://panelmontage-site.github.io/panelmontage-site/sandwich-panels.html",
         "name":"Монтаж сэндвич-панелей в Казахстане",
-        "description":"Расчёт, подбор, поставка и монтаж стеновых и кровельных сэндвич-панелей для промышленных, складских и коммерческих объектов.",
+        "description":"Стеновые и кровельные сэндвич-панели, подбор материалов, комплектующие, расчёт стоимости и монтаж по Казахстану.",
         "inLanguage":"ru"
       },
       {
@@ -87,13 +87,13 @@
           {
             "@type":"ListItem",
             "position":2,
-            "name":"Услуги"
+            "name":"Услуги",
+            "item":"https://panelmontage-site.github.io/panelmontage-site/sandwich-panels.html"
           },
           {
             "@type":"ListItem",
             "position":3,
-            "name":"Монтаж сэндвич-панелей",
-            "item":"https://panelmontage-site.github.io/panelmontage-site/sandwich-panels.html"
+            "name":"Монтаж сэндвич-панелей"
           }
         ]
       }
@@ -215,7 +215,7 @@
       position:absolute;
       top:72px;
       left:-20px;
-      min-width:295px;
+      min-width:305px;
       padding:10px;
       background:#fff;
       color:var(--navy);
@@ -276,10 +276,6 @@
       font-size:13px;
       font-weight:900;
       white-space:nowrap;
-    }
-
-    .header-cta:hover{
-      background:var(--orange2);
     }
 
     .burger{
@@ -355,7 +351,7 @@
     /* HERO */
 
     .hero{
-      min-height:680px;
+      min-height:690px;
       display:flex;
       align-items:center;
       color:#fff;
@@ -363,15 +359,15 @@
         linear-gradient(
           90deg,
           rgba(7,15,29,.97),
-          rgba(7,15,29,.81),
-          rgba(7,15,29,.42)
+          rgba(7,15,29,.82),
+          rgba(7,15,29,.40)
         ),
         url("panels-orange.png.png") center/cover no-repeat;
     }
 
     .hero-content{
-      max-width:1000px;
-      padding:92px 0;
+      max-width:1040px;
+      padding:94px 0;
     }
 
     .eyebrow{
@@ -394,7 +390,7 @@
     }
 
     h1{
-      max-width:1000px;
+      max-width:1040px;
       margin-bottom:24px;
       font-size:clamp(43px,6vw,72px);
       line-height:1.02;
@@ -402,7 +398,7 @@
     }
 
     .hero p{
-      max-width:880px;
+      max-width:890px;
       color:#e5e7eb;
       font-size:20px;
     }
@@ -479,34 +475,84 @@
       font-size:18px;
     }
 
-    /* ENTRY */
+    .light{
+      background:#f8fafc;
+    }
 
-    .entry{
+    /* INTRO */
+
+    .intro{
       background:var(--bg);
     }
 
-    .entry-grid{
+    .intro-grid{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
+      grid-template-columns:1.05fr .95fr;
+      gap:50px;
+      align-items:start;
     }
 
-    .entry-card{
-      display:flex;
-      flex-direction:column;
-      padding:30px;
+    .intro-text p{
+      margin-bottom:18px;
+      color:var(--muted);
+      font-size:17px;
+    }
+
+    .info-box{
+      padding:32px;
       border:1px solid var(--line);
       border-radius:var(--radius);
       background:#fff;
-      box-shadow:0 10px 30px rgba(15,23,42,.05);
+      box-shadow:var(--shadow);
     }
 
-    .entry-num{
-      width:45px;
-      height:45px;
+    .info-box h3{
+      margin-bottom:15px;
+      color:var(--navy);
+      font-size:24px;
+    }
+
+    .info-row{
+      display:flex;
+      gap:12px;
+      padding:12px 0;
+      border-bottom:1px solid var(--line);
+      color:#475467;
+    }
+
+    .info-row:last-child{
+      border:0;
+    }
+
+    .tick{
+      color:var(--orange);
+      font-weight:900;
+    }
+
+    /* CARDS */
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .card{
+      display:flex;
+      flex-direction:column;
+      padding:28px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      box-shadow:0 8px 28px rgba(15,23,42,.05);
+    }
+
+    .card-num{
+      width:43px;
+      height:43px;
       display:grid;
       place-items:center;
-      margin-bottom:20px;
+      margin-bottom:17px;
       border-radius:11px;
       background:#fff2e9;
       color:var(--orange);
@@ -514,65 +560,23 @@
       font-weight:900;
     }
 
-    .entry-card h3{
-      margin-bottom:10px;
+    .card h3{
+      margin-bottom:8px;
       color:var(--navy);
-      font-size:23px;
-      line-height:1.2;
+      font-size:21px;
     }
 
-    .entry-card p{
-      margin-bottom:20px;
+    .card p{
+      margin-bottom:17px;
       color:var(--muted);
+      font-size:14px;
     }
 
-    .entry-card a{
+    .card a{
       margin-top:auto;
       color:var(--orange);
       font-weight:900;
-    }
-
-    /* PANEL TYPES */
-
-    .panel-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:22px;
-    }
-
-    .panel-card{
-      padding:34px;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:#fff;
-      box-shadow:var(--shadow);
-    }
-
-    .panel-card .tag{
-      display:inline-block;
-      margin-bottom:15px;
-      padding:6px 10px;
-      border-radius:20px;
-      background:#fff2e9;
-      color:var(--orange);
-      font-size:12px;
-      font-weight:900;
-    }
-
-    .panel-card h3{
-      margin-bottom:12px;
-      color:var(--navy);
-      font-size:28px;
-    }
-
-    .panel-card p{
-      margin-bottom:16px;
-      color:var(--muted);
-    }
-
-    .panel-card a{
-      color:var(--orange);
-      font-weight:900;
+      font-size:14px;
     }
 
     /* DARK */
@@ -590,71 +594,61 @@
       color:#cbd5e1;
     }
 
-    /* OBJECTS */
-
-    .object-grid{
+    .system-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:18px;
     }
 
-    .object-card{
-      display:flex;
-      flex-direction:column;
-      padding:27px;
+    .system-card{
+      padding:28px;
       border:1px solid rgba(255,255,255,.11);
       border-radius:15px;
       background:rgba(255,255,255,.06);
     }
 
-    .object-num{
-      width:43px;
-      height:43px;
-      display:grid;
-      place-items:center;
-      margin-bottom:16px;
-      border-radius:11px;
-      background:rgba(255,101,0,.15);
+    .system-card strong{
+      display:block;
+      margin-bottom:10px;
       color:var(--orange);
       font-size:12px;
-      font-weight:900;
     }
 
-    .object-card h3{
+    .system-card h3{
       margin-bottom:8px;
       color:#fff;
       font-size:21px;
     }
 
-    .object-card p{
-      margin-bottom:17px;
+    .system-card p{
       color:#cbd5e1;
       font-size:14px;
     }
 
-    .object-card a{
-      margin-top:auto;
+    .system-card a{
+      display:inline-block;
+      margin-top:16px;
       color:var(--orange);
       font-weight:900;
       font-size:14px;
     }
 
-    /* CHOICE */
+    /* TWO COL */
 
-    .choice-grid{
+    .two-grid{
       display:grid;
-      grid-template-columns:1.05fr .95fr;
-      gap:52px;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
       align-items:start;
     }
 
-    .choice-text p{
+    .two-text p{
       margin-bottom:18px;
       color:var(--muted);
       font-size:17px;
     }
 
-    .choice-box{
+    .side-box{
       padding:32px;
       border:1px solid var(--line);
       border-radius:var(--radius);
@@ -662,211 +656,54 @@
       box-shadow:var(--shadow);
     }
 
-    .choice-box h3{
+    .side-box h3{
       margin-bottom:15px;
       color:var(--navy);
       font-size:24px;
     }
 
-    .choice-item{
-      display:flex;
-      gap:12px;
+    .side-item{
       padding:12px 0;
       border-bottom:1px solid var(--line);
       color:#475467;
+      font-weight:700;
     }
 
-    .choice-item:last-child{
+    .side-item:last-child{
       border:0;
     }
 
-    .tick{
-      color:var(--orange);
-      font-weight:900;
-    }
+    /* FACTORS */
 
-    /* MONTAGE */
-
-    .montage{
-      background:#f8fafc;
-    }
-
-    .montage-grid{
+    .factor-grid{
       display:grid;
       grid-template-columns:repeat(4,1fr);
       gap:18px;
     }
 
-    .montage-card{
-      padding:26px;
-      border:1px solid var(--line);
+    .factor-card{
+      padding:27px;
+      border:1px solid rgba(255,255,255,.11);
       border-radius:15px;
-      background:#fff;
+      background:rgba(255,255,255,.06);
     }
 
-    .montage-card strong{
+    .factor-card strong{
       display:block;
       margin-bottom:9px;
       color:var(--orange);
       font-size:12px;
     }
 
-    .montage-card h3{
+    .factor-card h3{
       margin-bottom:8px;
-      color:var(--navy);
+      color:#fff;
       font-size:20px;
     }
 
-    .montage-card p{
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    /* PRICE */
-
-    .price-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:52px;
-      align-items:start;
-    }
-
-    .price-text p{
-      margin-bottom:18px;
-      color:var(--muted);
-      font-size:17px;
-    }
-
-    .price-box{
-      padding:32px;
-      border-radius:var(--radius);
-      background:var(--navy);
-      color:#fff;
-    }
-
-    .price-box h3{
-      margin-bottom:15px;
-      font-size:24px;
-    }
-
-    .price-item{
-      display:flex;
-      gap:12px;
-      padding:12px 0;
-      border-bottom:1px solid rgba(255,255,255,.1);
-      color:#e2e8f0;
-    }
-
-    .price-item:last-child{
-      border:0;
-    }
-
-    /* DATA */
-
-    .data{
-      background:var(--bg);
-    }
-
-    .data-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
-    }
-
-    .data-card{
-      padding:27px;
-      border:1px solid var(--line);
-      border-radius:15px;
-      background:#fff;
-    }
-
-    .data-card h3{
-      margin-bottom:9px;
-      color:var(--navy);
-      font-size:21px;
-    }
-
-    .data-card p{
-      color:var(--muted);
-      font-size:14px;
-    }
-
-    /* MATERIAL */
-
-    .material-grid{
-      display:grid;
-      grid-template-columns:1.05fr .95fr;
-      gap:50px;
-      align-items:center;
-    }
-
-    .material-text p{
-      margin-bottom:18px;
+    .factor-card p{
       color:#cbd5e1;
-      font-size:17px;
-    }
-
-    .material-box{
-      padding:32px;
-      border-radius:var(--radius);
-      background:rgba(255,255,255,.07);
-      border:1px solid rgba(255,255,255,.12);
-    }
-
-    .material-box h3{
-      margin-bottom:15px;
-      color:#fff;
-      font-size:24px;
-    }
-
-    .material-item{
-      padding:12px 0;
-      border-bottom:1px solid rgba(255,255,255,.1);
-      color:#e2e8f0;
-      font-weight:700;
-    }
-
-    .material-item:last-child{
-      border:0;
-    }
-
-    /* ERRORS */
-
-    .errors-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:22px;
-      align-items:start;
-    }
-
-    .errors-text p{
-      margin-bottom:18px;
-      color:var(--muted);
-      font-size:17px;
-    }
-
-    .errors-box{
-      padding:32px;
-      border-radius:var(--radius);
-      background:#fff7ed;
-      border:1px solid #fed7aa;
-    }
-
-    .errors-box h3{
-      margin-bottom:15px;
-      color:var(--navy);
-      font-size:24px;
-    }
-
-    .error-item{
-      padding:12px 0;
-      border-bottom:1px solid #fed7aa;
-      color:#7c4a24;
-      font-weight:700;
-    }
-
-    .error-item:last-child{
-      border:0;
+      font-size:14px;
     }
 
     /* PROCESS */
@@ -881,7 +718,8 @@
       padding:23px 18px;
       border:1px solid rgba(255,255,255,.11);
       border-radius:14px;
-      background:rgba(255,255,255,.06);
+      background:var(--navy);
+      color:#fff;
     }
 
     .process-card strong{
@@ -893,6 +731,7 @@
 
     .process-card h3{
       margin-bottom:7px;
+      color:#fff;
       font-size:17px;
     }
 
@@ -901,37 +740,80 @@
       font-size:13px;
     }
 
-    /* RELATED */
+    /* OBJECTS */
 
-    .related-grid{
+    .object-grid{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:18px;
+      grid-template-columns:repeat(5,1fr);
+      gap:15px;
     }
 
-    .related-card{
+    .object-card{
       display:flex;
       flex-direction:column;
-      padding:25px;
+      min-height:210px;
+      padding:24px;
       border:1px solid var(--line);
       border-radius:15px;
       background:#fff;
     }
 
-    .related-card h3{
+    .object-card h3{
       margin-bottom:8px;
       color:var(--navy);
-      font-size:20px;
+      font-size:19px;
     }
 
-    .related-card p{
-      margin-bottom:18px;
+    .object-card p{
+      margin-bottom:16px;
       color:var(--muted);
       font-size:14px;
     }
 
-    .related-card a{
+    .object-card a{
       margin-top:auto;
+      color:var(--orange);
+      font-weight:900;
+      font-size:14px;
+    }
+
+    /* ARTICLES */
+
+    .article-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .article-card{
+      padding:30px;
+      border:1px solid var(--line);
+      border-radius:17px;
+      background:#fff;
+    }
+
+    .article-card span{
+      display:block;
+      margin-bottom:10px;
+      color:var(--orange);
+      font-size:12px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    .article-card h3{
+      margin-bottom:10px;
+      color:var(--navy);
+      font-size:24px;
+    }
+
+    .article-card p{
+      margin-bottom:20px;
+      color:var(--muted);
+    }
+
+    .article-card a{
       color:var(--orange);
       font-weight:900;
     }
@@ -1020,8 +902,6 @@
       line-height:1.9;
     }
 
-    /* FOOTER */
-
     footer{
       padding:28px 0 95px;
       background:#090f1d;
@@ -1089,7 +969,6 @@
     }
 
     @media(max-width:1050px){
-
       .desktop-nav,
       .header-actions{
         display:none;
@@ -1099,12 +978,12 @@
         display:block;
       }
 
-      .object-grid,
-      .data-grid{
+      .card-grid,
+      .system-grid{
         grid-template-columns:1fr 1fr;
       }
 
-      .montage-grid{
+      .factor-grid{
         grid-template-columns:1fr 1fr;
       }
 
@@ -1112,13 +991,12 @@
         grid-template-columns:repeat(3,1fr);
       }
 
-      .related-grid{
+      .object-grid{
         grid-template-columns:1fr 1fr;
       }
     }
 
     @media(max-width:760px){
-
       .container{
         width:min(100% - 28px,1180px);
       }
@@ -1148,17 +1026,14 @@
         padding:64px 0;
       }
 
-      .entry-grid,
-      .panel-grid,
-      .object-grid,
-      .choice-grid,
-      .montage-grid,
-      .price-grid,
-      .data-grid,
-      .material-grid,
-      .errors-grid,
+      .intro-grid,
+      .card-grid,
+      .system-grid,
+      .two-grid,
+      .factor-grid,
       .process-grid,
-      .related-grid,
+      .object-grid,
+      .article-grid,
       .contacts-grid{
         grid-template-columns:1fr;
       }
@@ -1230,7 +1105,6 @@
     <nav class="desktop-nav"
          aria-label="Основная навигация">
 
-      <!-- SERVICES -->
       <div class="nav-item">
 
         <span class="nav-link"
@@ -1242,6 +1116,14 @@
 
           <a href="sandwich-panels.html">
             Монтаж сэндвич-панелей
+          </a>
+
+          <a href="wall-sandwich-panels.html">
+            Стеновые сэндвич-панели
+          </a>
+
+          <a href="roof-sandwich-panels.html">
+            Кровельные сэндвич-панели
           </a>
 
           <a href="hangars.html">
@@ -1285,10 +1167,11 @@
       </div>
 
 
-      <!-- DESIGN -->
       <div class="nav-item">
 
-        <span class="nav-link">Проектирование ▾</span>
+        <span class="nav-link">
+          Проектирование ▾
+        </span>
 
         <div class="dropdown">
 
@@ -1317,10 +1200,11 @@
       </div>
 
 
-      <!-- MATERIALS -->
       <div class="nav-item">
 
-        <span class="nav-link">Материалы ▾</span>
+        <span class="nav-link">
+          Материалы ▾
+        </span>
 
         <div class="dropdown">
 
@@ -1349,10 +1233,11 @@
       </div>
 
 
-      <!-- OBJECTS -->
       <div class="nav-item">
 
-        <span class="nav-link">Объекты ▾</span>
+        <span class="nav-link">
+          Объекты ▾
+        </span>
 
         <div class="dropdown">
 
@@ -1386,10 +1271,11 @@
       </a>
 
 
-      <!-- COMPANY -->
       <div class="nav-item">
 
-        <span class="nav-link">Компания ▾</span>
+        <span class="nav-link">
+          Компания ▾
+        </span>
 
         <div class="dropdown">
 
@@ -1468,17 +1354,13 @@
   <div class="mobile-menu"
        id="mobileMenu">
 
-    <span class="mobile-label">
-      Основное
-    </span>
+    <span class="mobile-label">Основное</span>
 
     <a href="index.html">Главная</a>
     <a href="calculation.html">Рассчитать объект</a>
     <a href="materials.html">Материалы и оборудование</a>
 
-    <span class="mobile-label">
-      Сэндвич-панели
-    </span>
+    <span class="mobile-label">Сэндвич-панели</span>
 
     <a href="sandwich-panels.html">Монтаж сэндвич-панелей</a>
     <a href="wall-sandwich-panels.html">Стеновые панели</a>
@@ -1487,18 +1369,25 @@
     <a href="kak-vybrat-sendvich-paneli.html">Как выбрать панели</a>
     <a href="oshibki-montazha-sendvich-paneley.html">Ошибки монтажа</a>
 
-    <span class="mobile-label">
-      Проектирование
-    </span>
+    <span class="mobile-label">Другие услуги</span>
+
+    <a href="metal-structures-installation.html">Металлоконструкции</a>
+    <a href="facade-panels.html">Фасадные панели</a>
+    <a href="facade-cassettes.html">Фасадные кассеты</a>
+    <a href="ventilated-facades.html">Вентилируемые фасады</a>
+    <a href="ventilation-kazakhstan.html">Вентиляция</a>
+    <a href="air-conditioning-kazakhstan.html">Кондиционирование</a>
+    <a href="cold-storage-panels.html">Холодильные помещения</a>
+    <a href="barite-plaster-xray-protection-kazakhstan.html">Специализированные работы</a>
+
+    <span class="mobile-label">Проектирование</span>
 
     <a href="sketch-design.html">Эскиз объекта</a>
     <a href="project-design.html">Разработка проекта</a>
     <a href="construction-estimate.html">Сметная стоимость</a>
     <a href="installation-calculation.html">Расчёт монтажных работ</a>
 
-    <span class="mobile-label">
-      Объекты
-    </span>
+    <span class="mobile-label">Объекты</span>
 
     <a href="industrial-buildings.html">Промышленные здания</a>
     <a href="warehouses.html">Склады</a>
@@ -1506,13 +1395,13 @@
     <a href="commercial-buildings.html">Коммерческие объекты</a>
     <a href="logistics-centers.html">Логистические центры</a>
 
-    <span class="mobile-label">
-      Компания
-    </span>
+    <span class="mobile-label">Компания</span>
 
-    <a href="about.html">О компании</a>
+    <a href="about.html">О PANEL MONTAGE</a>
     <a href="projects.html">Проекты</a>
     <a href="licenses-qualifications.html">Лицензии и квалификация</a>
+    <a href="kazakhstan.html">География работ</a>
+    <a href="construction-contract-kazakhstan.html">Договор и порядок работ</a>
     <a href="blog.html">Блог</a>
     <a href="contacts.html">Контакты</a>
 
@@ -1553,7 +1442,7 @@
       &nbsp;›&nbsp;
       Услуги
       &nbsp;›&nbsp;
-      Монтаж сэндвич-панелей
+      Сэндвич-панели
 
     </div>
 
@@ -1576,30 +1465,33 @@
         </h1>
 
         <p>
-          Стеновые и кровельные
-          <strong>сэндвич-панели для складов,
-          ангаров, производственных,
-          логистических и коммерческих зданий.</strong>
-          Расчёт объёмов,
-          подбор и поставка материалов
-          и монтаж по проекту.
+          Стеновые и кровельные сэндвич-панели
+          для складов,
+          ангаров,
+          производственных,
+          логистических
+          и коммерческих зданий.
+          Расчёт,
+          подбор и поставка материалов,
+          комплектующие
+          и монтажные работы.
         </p>
 
         <div class="hero-actions">
 
           <a class="btn btn-orange"
              href="calculation.html">
-            Рассчитать объект
+            Рассчитать монтаж
           </a>
 
           <a class="btn btn-white"
-             href="https://wa.me/77056512203?text=Здравствуйте,%20нужен%20расчёт%20сэндвич-панелей%20и%20монтажа">
-            Отправить проект
+             href="https://wa.me/77056512203?text=Здравствуйте,%20нужен%20расчёт%20монтажа%20сэндвич-панелей">
+            Написать в WhatsApp
           </a>
 
           <a class="btn btn-outline"
-             href="#panels">
-            Виды панелей
+             href="#panel-types">
+            Стеновые и кровельные
           </a>
 
         </div>
@@ -1611,467 +1503,93 @@
   </section>
 
 
-  <!-- ENTRY -->
-  <section class="entry">
+  <!-- INTRO -->
+  <section class="intro">
 
-    <div class="container">
+    <div class="container intro-grid">
 
-      <div class="section-head">
+      <div class="intro-text">
 
         <div class="section-label">
-          С чего начать
+          Система ограждающих конструкций
         </div>
 
         <h2>
-          Панели уже куплены или их ещё нужно подобрать?
+          Сэндвич-панель — это не просто лист, который нужно закрепить на каркасе
         </h2>
+
+        <p>
+          Результат зависит
+          от сочетания нескольких элементов:
+          проекта,
+          готовности металлического каркаса,
+          характеристик панелей,
+          способа обращения с материалом,
+          крепежа,
+          герметизации,
+          примыканий
+          и доборных элементов.
+        </p>
+
+        <p>
+          Поэтому при подготовке монтажа
+          важно рассматривать не только площадь панелей,
+          но и реальную геометрию объекта,
+          высоту,
+          проёмы,
+          кровлю,
+          узлы,
+          условия подъёма
+          и фактическую готовность основания.
+        </p>
 
         <p>
           PANEL MONTAGE может подключаться
-          на разных стадиях проекта:
-          от расчёта необходимых материалов
-          до монтажа уже поставленных панелей.
+          как к объекту,
+          где панели уже приобретены,
+          так и на более раннем этапе,
+          когда требуется подобрать материалы,
+          рассчитать объёмы
+          и определить состав работ.
         </p>
 
       </div>
 
 
-      <div class="entry-grid">
-
-        <article class="entry-card">
-
-          <div class="entry-num">01</div>
-
-          <h3>
-            Панели уже на объекте
-          </h3>
-
-          <p>
-            Есть материал,
-            проект или схема раскладки.
-            Требуется рассчитать
-            и организовать монтажные работы.
-          </p>
-
-          <a href="installation-calculation.html">
-            Рассчитать монтаж →
-          </a>
-
-        </article>
-
-
-        <article class="entry-card">
-
-          <div class="entry-num">02</div>
-
-          <h3>
-            Есть проект, но нет панелей
-          </h3>
-
-          <p>
-            По проекту и спецификации
-            можно определить
-            необходимые панели,
-            комплектующие
-            и объём монтажных работ.
-          </p>
-
-          <a href="materials.html">
-            Подобрать материалы →
-          </a>
-
-        </article>
-
-
-        <article class="entry-card">
-
-          <div class="entry-num">03</div>
-
-          <h3>
-            Есть только размеры объекта
-          </h3>
-
-          <p>
-            Если полноценного проекта ещё нет,
-            можно начать
-            с исходных размеров,
-            назначения здания
-            и требований к объекту.
-          </p>
-
-          <a href="calculation.html">
-            Передать параметры →
-          </a>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PANELS -->
-  <section id="panels">
-
-    <div class="container">
-
-      <div class="section-head">
-
-        <div class="section-label">
-          Виды панелей
-        </div>
-
-        <h2>
-          Стеновые и кровельные сэндвич-панели
-        </h2>
-
-        <p>
-          Несмотря на общий принцип конструкции,
-          стеновые и кровельные панели
-          выполняют разные задачи
-          и требуют соответствующих
-          проектных и монтажных решений.
-        </p>
-
-      </div>
-
-
-      <div class="panel-grid">
-
-        <article class="panel-card">
-
-          <span class="tag">
-            Стены
-          </span>
-
-          <h3>
-            Стеновые сэндвич-панели
-          </h3>
-
-          <p>
-            Используются
-            для устройства наружных
-            и внутренних ограждающих конструкций
-            зданий.
-          </p>
-
-          <p>
-            При подборе учитываются
-            назначение помещения,
-            требования к теплоизоляции,
-            тип наполнителя,
-            толщина панели,
-            покрытие
-            и конструкция узлов.
-          </p>
-
-          <a href="wall-sandwich-panels.html">
-            Стеновые панели →
-          </a>
-
-        </article>
-
-
-        <article class="panel-card">
-
-          <span class="tag">
-            Кровля
-          </span>
-
-          <h3>
-            Кровельные сэндвич-панели
-          </h3>
-
-          <p>
-            Используются
-            для формирования
-            утеплённой кровли здания.
-          </p>
-
-          <p>
-            Для кровельных панелей
-            особенно важны
-            уклон,
-            направление монтажа,
-            стыки,
-            герметизация,
-            примыкания
-            и водоотведение.
-          </p>
-
-          <a href="roof-sandwich-panels.html">
-            Кровельные панели →
-          </a>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- OBJECTS -->
-  <section class="dark">
-
-    <div class="container">
-
-      <div class="section-head">
-
-        <div class="section-label">
-          Применение
-        </div>
-
-        <h2>
-          Где используются сэндвич-панели
-        </h2>
-
-        <p>
-          Ограждающие конструкции
-          подбираются не сами по себе,
-          а с учётом назначения
-          и условий эксплуатации здания.
-        </p>
-
-      </div>
-
-
-      <div class="object-grid">
-
-        <article class="object-card">
-
-          <div class="object-num">01</div>
-
-          <h3>
-            Склады
-          </h3>
-
-          <p>
-            Стеновые и кровельные
-            ограждающие конструкции
-            складских зданий.
-          </p>
-
-          <a href="warehouses.html">
-            Склады →
-          </a>
-
-        </article>
-
-
-        <article class="object-card">
-
-          <div class="object-num">02</div>
-
-          <h3>
-            Ангары
-          </h3>
-
-          <p>
-            Быстровозводимые здания
-            на металлическом каркасе.
-          </p>
-
-          <a href="hangars.html">
-            Ангары →
-          </a>
-
-        </article>
-
-
-        <article class="object-card">
-
-          <div class="object-num">03</div>
-
-          <h3>
-            Производственные здания
-          </h3>
-
-          <p>
-            Ограждающие конструкции
-            промышленных
-            и производственных объектов.
-          </p>
-
-          <a href="industrial-buildings.html">
-            Промышленные здания →
-          </a>
-
-        </article>
-
-
-        <article class="object-card">
-
-          <div class="object-num">04</div>
-
-          <h3>
-            Логистические центры
-          </h3>
-
-          <p>
-            Стеновые и кровельные решения
-            для складских
-            и распределительных комплексов.
-          </p>
-
-          <a href="logistics-centers.html">
-            Логистические центры →
-          </a>
-
-        </article>
-
-
-        <article class="object-card">
-
-          <div class="object-num">05</div>
-
-          <h3>
-            Коммерческие здания
-          </h3>
-
-          <p>
-            Магазины,
-            сервисные здания,
-            шоурумы
-            и другие коммерческие объекты.
-          </p>
-
-          <a href="commercial-buildings.html">
-            Коммерческие объекты →
-          </a>
-
-        </article>
-
-
-        <article class="object-card">
-
-          <div class="object-num">06</div>
-
-          <h3>
-            Холодильные помещения
-          </h3>
-
-          <p>
-            Специализированные
-            ограждающие конструкции
-            для помещений
-            с заданным температурным режимом.
-          </p>
-
-          <a href="cold-storage-panels.html">
-            Холодильные помещения →
-          </a>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CHOICE -->
-  <section>
-
-    <div class="container choice-grid">
-
-      <div class="choice-text">
-
-        <div class="section-label">
-          Подбор панелей
-        </div>
-
-        <h2>
-          Выбор панели начинается не с цены за квадратный метр
-        </h2>
-
-        <p>
-          Панели отличаются
-          толщиной,
-          типом утеплителя,
-          геометрией,
-          замковым соединением,
-          покрытием
-          и другими характеристиками.
-        </p>
-
-        <p>
-          Поэтому предложение,
-          которое выглядит дешевле
-          по стоимости одного квадратного метра,
-          не обязательно будет
-          наиболее рациональным
-          для конкретного объекта.
-        </p>
-
-        <p>
-          На практике важно учитывать
-          не только саму панель,
-          но и комплектность:
-          крепёж,
-          доборные элементы,
-          герметизацию,
-          примыкания,
-          проёмы
-          и особенности монтажа.
-        </p>
-
-        <a class="btn btn-orange"
-           href="kak-vybrat-sendvich-paneli.html">
-          Как выбрать сэндвич-панели
-        </a>
-
-      </div>
-
-
-      <aside class="choice-box">
+      <aside class="info-box">
 
         <h3>
-          При подборе учитываются
+          Для начала расчёта
         </h3>
 
-        <div class="choice-item">
+        <div class="info-row">
           <span class="tick">✓</span>
-          <span>назначение здания</span>
+          <span>назначение объекта</span>
         </div>
 
-        <div class="choice-item">
+        <div class="info-row">
           <span class="tick">✓</span>
-          <span>стена или кровля</span>
+          <span>город или район строительства</span>
         </div>
 
-        <div class="choice-item">
+        <div class="info-row">
           <span class="tick">✓</span>
-          <span>толщина панели</span>
+          <span>длина, ширина и высота</span>
         </div>
 
-        <div class="choice-item">
+        <div class="info-row">
           <span class="tick">✓</span>
-          <span>тип утеплителя</span>
+          <span>стены, кровля или оба вида работ</span>
         </div>
 
-        <div class="choice-item">
+        <div class="info-row">
           <span class="tick">✓</span>
-          <span>покрытие металла</span>
+          <span>проект, чертёж или эскиз — если есть</span>
         </div>
 
-        <div class="choice-item">
+        <div class="info-row">
           <span class="tick">✓</span>
-          <span>длина и геометрия панелей</span>
-        </div>
-
-        <div class="choice-item">
-          <span class="tick">✓</span>
-          <span>узлы и примыкания</span>
-        </div>
-
-        <div class="choice-item">
-          <span class="tick">✓</span>
-          <span>условия эксплуатации</span>
+          <span>фотографии существующего объекта — если применимо</span>
         </div>
 
       </aside>
@@ -2081,8 +1599,111 @@
   </section>
 
 
-  <!-- MONTAGE -->
-  <section class="montage">
+  <!-- TYPES -->
+  <section id="panel-types">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Основные направления
+        </div>
+
+        <h2>
+          Стеновые и кровельные сэндвич-панели
+        </h2>
+
+        <p>
+          У стен и кровли
+          разные функции,
+          узлы
+          и условия монтажа.
+          Поэтому для каждого направления
+          предусмотрена отдельная страница.
+        </p>
+
+      </div>
+
+
+      <div class="card-grid">
+
+        <article class="card">
+
+          <div class="card-num">01</div>
+
+          <h3>
+            Стеновые сэндвич-панели
+          </h3>
+
+          <p>
+            Ограждающие конструкции
+            наружных стен,
+            фасадных плоскостей,
+            перегородок
+            и связанных узлов объекта.
+          </p>
+
+          <a href="wall-sandwich-panels.html">
+            Стеновые панели →
+          </a>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-num">02</div>
+
+          <h3>
+            Кровельные сэндвич-панели
+          </h3>
+
+          <p>
+            Кровельные конструкции,
+            примыкания,
+            коньковые элементы,
+            герметизация
+            и связанные монтажные операции.
+          </p>
+
+          <a href="roof-sandwich-panels.html">
+            Кровельные панели →
+          </a>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-num">03</div>
+
+          <h3>
+            Стены + кровля
+          </h3>
+
+          <p>
+            Для нового объекта
+            оба направления
+            можно рассчитать
+            как взаимосвязанный объём работ.
+          </p>
+
+          <a href="calculation.html">
+            Рассчитать объект →
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT MONTAGE INCLUDES -->
+  <section class="dark">
 
     <div class="container">
 
@@ -2093,26 +1714,43 @@
         </div>
 
         <h2>
-          Качество здания зависит не только от качества панели
+          Что учитывается при организации монтажа
         </h2>
 
         <p>
-          Даже подходящий материал
-          требует правильной подготовки,
-          раскладки,
-          крепления,
-          герметизации
-          и устройства узлов.
+          Точный состав работ
+          определяется проектом,
+          конструкцией объекта
+          и согласованным объёмом.
         </p>
 
       </div>
 
 
-      <div class="montage-grid">
+      <div class="system-grid">
 
-        <article class="montage-card">
+        <article class="system-card">
 
           <strong>01</strong>
+
+          <h3>
+            Проверка исходных данных
+          </h3>
+
+          <p>
+            Проект,
+            размеры,
+            тип панелей,
+            расположение проёмов
+            и предполагаемый состав работ.
+          </p>
+
+        </article>
+
+
+        <article class="system-card">
+
+          <strong>02</strong>
 
           <h3>
             Готовность каркаса
@@ -2120,90 +1758,75 @@
 
           <p>
             Перед началом работ
-            важны геометрия,
-            положение элементов
-            и готовность основания
-            для крепления панелей.
+            оценивается готовность основания
+            для установки ограждающих конструкций.
           </p>
+
+          <a href="metal-structures-installation.html">
+            Металлоконструкции →
+          </a>
 
         </article>
 
 
-        <article class="montage-card">
-
-          <strong>02</strong>
-
-          <h3>
-            Раскладка
-          </h3>
-
-          <p>
-            Последовательность монтажа
-            и расположение панелей
-            должны соответствовать
-            проектному решению.
-          </p>
-
-        </article>
-
-
-        <article class="montage-card">
+        <article class="system-card">
 
           <strong>03</strong>
 
           <h3>
-            Крепление
+            Подача панелей
           </h3>
 
           <p>
-            Крепёж и его расположение
-            подбираются
-            под конструкцию,
-            панель и соответствующий узел.
+            Учитываются
+            размеры элементов,
+            высота,
+            доступ к объекту
+            и условия подъёма материала.
           </p>
 
         </article>
 
 
-        <article class="montage-card">
+        <article class="system-card">
 
           <strong>04</strong>
 
           <h3>
-            Герметизация
+            Установка и крепление
           </h3>
 
           <p>
-            Стыки,
-            примыкания
-            и проходы требуют
-            предусмотренной проектом
-            герметизации.
+            Панели устанавливаются
+            и закрепляются
+            в соответствии
+            с проектными решениями
+            и требованиями к применяемой системе.
           </p>
 
         </article>
 
 
-        <article class="montage-card">
+        <article class="system-card">
 
           <strong>05</strong>
 
           <h3>
-            Проёмы
+            Стыки и герметизация
           </h3>
 
           <p>
-            Ворота,
-            окна,
-            двери
-            и другие проёмы
-            требуют отдельной проработки узлов.
+            Особое внимание
+            уделяется соединениям,
+            примыканиям
+            и предусмотренным
+            герметизирующим материалам.
           </p>
 
         </article>
 
 
-        <article class="montage-card">
+        <article class="system-card">
 
           <strong>06</strong>
 
@@ -2212,47 +1835,266 @@
           </h3>
 
           <p>
-            Они закрывают
-            примыкания,
-            углы,
-            коньки
-            и другие участки здания.
+            Углы,
+            откосы,
+            коньки,
+            парапеты
+            и другие элементы
+            завершают систему ограждения.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MATERIAL SELECTION -->
+  <section>
+
+    <div class="container two-grid">
+
+      <div class="two-text">
+
+        <div class="section-label">
+          Выбор материала
+        </div>
+
+        <h2>
+          Панели лучше выбирать вместе с задачей объекта
+        </h2>
+
+        <p>
+          Один и тот же тип панели
+          не является универсальным решением
+          для всех зданий.
+          Выбор зависит
+          от назначения объекта,
+          температурного режима,
+          конструкции,
+          требований проекта
+          и условий эксплуатации.
+        </p>
+
+        <p>
+          При подборе рассматриваются
+          тип панели,
+          её назначение,
+          утеплитель,
+          толщина,
+          наружное покрытие,
+          геометрия
+          и комплектующие.
+        </p>
+
+        <p>
+          PANEL MONTAGE работает
+          с сетью проверенных производителей
+          и поставщиков,
+          поэтому при необходимости
+          можно рассматривать
+          подбор и поставку панелей
+          вместе с монтажной задачей.
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="btn btn-orange"
+             href="materials.html">
+            Подобрать материалы
+          </a>
+
+          <a class="btn"
+             style="border:1px solid #d0d5dd;color:#0f172a;"
+             href="kak-vybrat-sendvich-paneli.html">
+            Как выбрать панели
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <aside class="side-box">
+
+        <h3>
+          При выборе учитываются
+        </h3>
+
+        <div class="side-item">
+          Назначение здания
+        </div>
+
+        <div class="side-item">
+          Стена или кровля
+        </div>
+
+        <div class="side-item">
+          Требуемый температурный режим
+        </div>
+
+        <div class="side-item">
+          Тип утеплителя
+        </div>
+
+        <div class="side-item">
+          Толщина панели
+        </div>
+
+        <div class="side-item">
+          Защитно-декоративное покрытие
+        </div>
+
+        <div class="side-item">
+          Размеры и геометрия
+        </div>
+
+        <div class="side-item">
+          Требования проекта
+        </div>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+
+  <!-- BEFORE INSTALLATION -->
+  <section class="light">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          До начала работ
+        </div>
+
+        <h2>
+          Что желательно проверить до монтажа
+        </h2>
+
+        <p>
+          Подготовка объекта
+          помогает заранее увидеть вопросы,
+          которые иначе могут проявиться
+          уже во время монтажных работ.
+        </p>
+
+      </div>
+
+
+      <div class="card-grid">
+
+        <article class="card">
+
+          <div class="card-num">01</div>
+
+          <h3>
+            Проект и раскладка
+          </h3>
+
+          <p>
+            Необходимо понимать,
+            где располагаются панели,
+            проёмы,
+            примыкания
+            и основные узлы.
           </p>
 
         </article>
 
 
-        <article class="montage-card">
+        <article class="card">
 
-          <strong>07</strong>
+          <div class="card-num">02</div>
 
           <h3>
-            Подъём панелей
+            Геометрия каркаса
           </h3>
 
           <p>
-            Способ подачи материала
-            зависит от размеров,
-            высоты здания
-            и условий площадки.
+            Состояние основания
+            влияет
+            на последующую установку
+            ограждающих конструкций.
           </p>
 
         </article>
 
 
-        <article class="montage-card">
+        <article class="card">
 
-          <strong>08</strong>
+          <div class="card-num">03</div>
 
           <h3>
-            Последующие работы
+            Спецификация панелей
           </h3>
 
           <p>
-            После ограждающих конструкций
-            могут выполняться
-            фасадные
-            и инженерные работы.
+            Проверяются
+            назначение,
+            размеры,
+            количество
+            и соответствие исходной задаче.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-num">04</div>
+
+          <h3>
+            Комплектующие
+          </h3>
+
+          <p>
+            Крепёж,
+            доборные элементы,
+            герметизирующие
+            и другие предусмотренные материалы.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-num">05</div>
+
+          <h3>
+            Доступ и подъём
+          </h3>
+
+          <p>
+            Важно заранее понимать,
+            как панели будут доставляться,
+            разгружаться
+            и подаваться к месту установки.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-num">06</div>
+
+          <h3>
+            Хранение на объекте
+          </h3>
+
+          <p>
+            Условия временного размещения
+            материала
+            должны учитывать
+            требования к его сохранности.
           </p>
 
         </article>
@@ -2265,344 +2107,128 @@
 
 
   <!-- PRICE -->
-  <section>
-
-    <div class="container price-grid">
-
-      <div class="price-text">
-
-        <div class="section-label">
-          Стоимость монтажа
-        </div>
-
-        <h2>
-          Цена монтажа сэндвич-панелей зависит от объекта
-        </h2>
-
-        <p>
-          Фиксированная цена
-          только по площади
-          не отражает всех условий работ.
-        </p>
-
-        <p>
-          Два здания
-          с одинаковой площадью панелей
-          могут отличаться
-          по высоте,
-          количеству проёмов,
-          сложности кровли,
-          типу узлов,
-          готовности каркаса
-          и необходимости подъёмной техники.
-        </p>
-
-        <p>
-          Поэтому для предметного расчёта
-          лучше передать проект,
-          чертежи,
-          ведомость объёмов
-          или основные параметры объекта.
-        </p>
-
-        <div class="hero-actions">
-
-          <a class="btn btn-orange"
-             href="sandwich-panel-installation-price.html">
-            Стоимость монтажа
-          </a>
-
-          <a class="btn"
-             style="border:1px solid #d0d5dd;color:#0f172a;"
-             href="installation-calculation.html">
-            Рассчитать работы
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <aside class="price-box">
-
-        <h3>
-          На цену влияют
-        </h3>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>общая площадь панелей</span>
-        </div>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>стена или кровля</span>
-        </div>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>высота здания</span>
-        </div>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>длина и вес элементов</span>
-        </div>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>количество проёмов</span>
-        </div>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>сложность узлов</span>
-        </div>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>подъёмная техника</span>
-        </div>
-
-        <div class="price-item">
-          <span class="tick">✓</span>
-          <span>регион и условия площадки</span>
-        </div>
-
-      </aside>
-
-    </div>
-
-  </section>
-
-
-  <!-- DATA -->
-  <section class="data">
+  <section class="dark">
 
     <div class="container">
 
       <div class="section-head">
 
         <div class="section-label">
-          Что отправить
+          Стоимость
         </div>
 
         <h2>
-          Чем больше исходных данных, тем предметнее расчёт
+          От чего зависит цена монтажа сэндвич-панелей
         </h2>
 
         <p>
-          Не обязательно иметь
-          полный комплект документов.
-          Отправьте то,
-          что уже есть.
+          Одна цифра за квадратный метр
+          без параметров объекта
+          не показывает реальный объём работ.
         </p>
 
       </div>
 
 
-      <div class="data-grid">
+      <div class="factor-grid">
 
-        <article class="data-card">
-
-          <h3>
-            Проект
-          </h3>
-
+        <article class="factor-card">
+          <strong>01</strong>
+          <h3>Площадь</h3>
           <p>
-            Архитектурные
-            и конструктивные чертежи,
-            планы,
-            разрезы
-            и соответствующие узлы.
+            Общий объём стеновых
+            и кровельных конструкций.
           </p>
-
         </article>
 
-
-        <article class="data-card">
-
-          <h3>
-            Спецификация
-          </h3>
-
+        <article class="factor-card">
+          <strong>02</strong>
+          <h3>Высота</h3>
           <p>
-            Тип,
-            толщина,
-            длина,
-            количество
-            и другие известные характеристики панелей.
+            Высота здания
+            влияет на организацию монтажа.
           </p>
-
         </article>
 
-
-        <article class="data-card">
-
-          <h3>
-            Ведомость объёмов
-          </h3>
-
+        <article class="factor-card">
+          <strong>03</strong>
+          <h3>Тип панелей</h3>
           <p>
-            Площади стен,
-            кровли,
-            доборных элементов
-            и другие известные объёмы.
+            Стеновые
+            и кровельные конструкции
+            имеют различный состав операций.
           </p>
-
         </article>
 
-
-        <article class="data-card">
-
-          <h3>
-            Размеры здания
-          </h3>
-
+        <article class="factor-card">
+          <strong>04</strong>
+          <h3>Габариты</h3>
           <p>
-            Длина,
-            ширина,
-            высота
-            и основные параметры,
-            если проекта пока нет.
+            Размеры элементов
+            влияют на обращение
+            и подачу материала.
           </p>
-
         </article>
 
-
-        <article class="data-card">
-
-          <h3>
-            Фотографии
-          </h3>
-
+        <article class="factor-card">
+          <strong>05</strong>
+          <h3>Проёмы</h3>
           <p>
-            Фото существующего каркаса
-            или строительной площадки
-            помогают понять текущую стадию объекта.
+            Ворота,
+            двери,
+            окна
+            и технологические проёмы.
           </p>
-
         </article>
 
-
-        <article class="data-card">
-
-          <h3>
-            Местонахождение
-          </h3>
-
+        <article class="factor-card">
+          <strong>06</strong>
+          <h3>Узлы</h3>
           <p>
-            Город или район объекта
-            необходимы
-            для понимания логистики
-            и организации работ.
+            Углы,
+            примыкания,
+            парапеты,
+            коньки
+            и другие детали.
           </p>
+        </article>
 
+        <article class="factor-card">
+          <strong>07</strong>
+          <h3>Каркас</h3>
+          <p>
+            Фактическая готовность
+            несущих конструкций
+            к монтажу панелей.
+          </p>
+        </article>
+
+        <article class="factor-card">
+          <strong>08</strong>
+          <h3>Регион</h3>
+          <p>
+            Логистика,
+            расположение
+            и условия организации работ.
+          </p>
         </article>
 
       </div>
 
-    </div>
 
-  </section>
+      <div class="hero-actions">
 
+        <a class="btn btn-orange"
+           href="sandwich-panel-installation-price.html">
+          Цена монтажа сэндвич-панелей
+        </a>
 
-  <!-- MATERIAL -->
-  <section class="dark">
-
-    <div class="container material-grid">
-
-      <div class="material-text">
-
-        <div class="section-label">
-          Панели и комплектующие
-        </div>
-
-        <h2>
-          Можно рассчитать не только монтаж, но и материалы
-        </h2>
-
-        <p>
-          PANEL MONTAGE работает
-          с сетью проверенных производителей
-          и поставщиков.
-        </p>
-
-        <p>
-          При наличии проекта
-          или достаточных исходных данных
-          можно рассматривать
-          сэндвич-панели,
-          крепёж,
-          доборные элементы,
-          герметизирующие материалы
-          и связанные позиции.
-        </p>
-
-        <p>
-          Монтажная практика помогает
-          обращать внимание
-          не только на цену материала,
-          но и на геометрию,
-          комплектность,
-          упаковку,
-          совместимость элементов
-          и типичные сложности,
-          которые проявляются уже на объекте.
-        </p>
-
-        <div class="hero-actions">
-
-          <a class="btn btn-orange"
-             href="materials.html">
-            Подобрать материалы
-          </a>
-
-          <a class="btn btn-outline"
-             href="calculation.html">
-            Отправить проект
-          </a>
-
-        </div>
+        <a class="btn btn-outline"
+           href="calculation.html">
+          Получить расчёт
+        </a>
 
       </div>
-
-
-      <aside class="material-box">
-
-        <h3>
-          Комплектация может включать
-        </h3>
-
-        <div class="material-item">
-          Стеновые сэндвич-панели
-        </div>
-
-        <div class="material-item">
-          Кровельные сэндвич-панели
-        </div>
-
-        <div class="material-item">
-          Самонарезающий крепёж
-        </div>
-
-        <div class="material-item">
-          Доборные элементы
-        </div>
-
-        <div class="material-item">
-          Герметизирующие материалы
-        </div>
-
-        <div class="material-item">
-          Уплотнительные элементы
-        </div>
-
-        <div class="material-item">
-          Сопутствующие материалы
-        </div>
-
-      </aside>
 
     </div>
 
@@ -2612,86 +2238,296 @@
   <!-- ERRORS -->
   <section>
 
-    <div class="container errors-grid">
+    <div class="container two-grid">
 
-      <div class="errors-text">
+      <div class="two-text">
 
         <div class="section-label">
           Практика монтажа
         </div>
 
         <h2>
-          Ошибки в узлах могут оказаться дороже самой экономии на монтаже
+          Ошибки часто возникают не из-за самой панели
         </h2>
 
         <p>
-          Проблемы ограждающих конструкций
-          не всегда связаны
-          с качеством самой панели.
+          Проблемы могут быть связаны
+          с подготовкой основания,
+          обращением с материалом,
+          креплением,
+          стыками,
+          примыканиями,
+          доборными элементами
+          или несогласованностью разных этапов работ.
         </p>
 
         <p>
-          Причиной могут стать
-          неподготовленный каркас,
-          неправильные примыкания,
-          повреждение материала,
-          ошибки крепления
-          или недостаточная герметизация.
-        </p>
-
-        <p>
-          Поэтому при оценке объекта
-          имеет смысл рассматривать
-          панель,
-          конструкцию
-          и способ монтажа
-          как взаимосвязанные элементы.
+          Поэтому оценивать нужно
+          не отдельную панель,
+          а всю систему:
+          каркас,
+          материал,
+          крепёж,
+          узлы
+          и качество выполнения монтажных операций.
         </p>
 
         <a class="btn btn-orange"
            href="oshibki-montazha-sendvich-paneley.html">
-          10 ошибок монтажа панелей
+          10 ошибок монтажа
         </a>
 
       </div>
 
 
-      <aside class="errors-box">
+      <aside class="side-box">
 
         <h3>
-          На что обращают внимание
+          Особого внимания требуют
         </h3>
 
-        <div class="error-item">
-          Геометрия каркаса
+        <div class="side-item">
+          Готовность основания
         </div>
 
-        <div class="error-item">
-          Состояние панелей
+        <div class="side-item">
+          Перемещение панелей
         </div>
 
-        <div class="error-item">
-          Правильность раскладки
+        <div class="side-item">
+          Положение элементов
         </div>
 
-        <div class="error-item">
+        <div class="side-item">
           Крепление
         </div>
 
-        <div class="error-item">
+        <div class="side-item">
           Стыки
         </div>
 
-        <div class="error-item">
-          Примыкания
-        </div>
-
-        <div class="error-item">
+        <div class="side-item">
           Герметизация
         </div>
 
-        <div class="error-item">
+        <div class="side-item">
+          Примыкания
+        </div>
+
+        <div class="side-item">
           Доборные элементы
+        </div>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+
+  <!-- OBJECTS -->
+  <section class="light">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="section-label">
+          Где применяются
+        </div>
+
+        <h2>
+          Сэндвич-панели для разных типов объектов
+        </h2>
+
+        <p>
+          Решение подбирается
+          не только по площади,
+          но и по назначению здания
+          и условиям его эксплуатации.
+        </p>
+
+      </div>
+
+
+      <div class="object-grid">
+
+        <article class="object-card">
+
+          <h3>
+            Ангары
+          </h3>
+
+          <p>
+            Металлокаркас,
+            стены,
+            кровля
+            и монтажные работы.
+          </p>
+
+          <a href="hangars.html">
+            Ангары →
+          </a>
+
+        </article>
+
+
+        <article class="object-card">
+
+          <h3>
+            Склады
+          </h3>
+
+          <p>
+            Складские здания
+            и ограждающие конструкции.
+          </p>
+
+          <a href="warehouses.html">
+            Склады →
+          </a>
+
+        </article>
+
+
+        <article class="object-card">
+
+          <h3>
+            Производственные здания
+          </h3>
+
+          <p>
+            Цеха
+            и промышленные объекты.
+          </p>
+
+          <a href="industrial-buildings.html">
+            Производственные здания →
+          </a>
+
+        </article>
+
+
+        <article class="object-card">
+
+          <h3>
+            Коммерческие объекты
+          </h3>
+
+          <p>
+            Магазины,
+            сервисные
+            и другие коммерческие здания.
+          </p>
+
+          <a href="commercial-buildings.html">
+            Коммерческие объекты →
+          </a>
+
+        </article>
+
+
+        <article class="object-card">
+
+          <h3>
+            Логистические центры
+          </h3>
+
+          <p>
+            Склады,
+            распределительные
+            и логистические комплексы.
+          </p>
+
+          <a href="logistics-centers.html">
+            Логистические центры →
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MATERIALS -->
+  <section>
+
+    <div class="container two-grid">
+
+      <div class="two-text">
+
+        <div class="section-label">
+          Панели и комплектующие
+        </div>
+
+        <h2>
+          Материалы можно рассчитать вместе с монтажом
+        </h2>
+
+        <p>
+          Если панели уже закуплены,
+          можно рассматривать
+          только необходимый объём монтажных работ.
+        </p>
+
+        <p>
+          Если материал ещё не выбран,
+          PANEL MONTAGE может рассмотреть
+          подбор и поставку панелей
+          через сеть производителей и поставщиков,
+          а также необходимые комплектующие.
+        </p>
+
+        <p>
+          Такой подход позволяет
+          заранее связать материал
+          с конструкцией объекта
+          и будущим монтажом.
+        </p>
+
+        <a class="btn btn-orange"
+           href="materials.html">
+          Материалы и оборудование
+        </a>
+
+      </div>
+
+
+      <aside class="side-box">
+
+        <h3>
+          В составе задачи
+        </h3>
+
+        <div class="side-item">
+          Стеновые панели
+        </div>
+
+        <div class="side-item">
+          Кровельные панели
+        </div>
+
+        <div class="side-item">
+          Крепёж
+        </div>
+
+        <div class="side-item">
+          Доборные элементы
+        </div>
+
+        <div class="side-item">
+          Герметизирующие материалы
+        </div>
+
+        <div class="side-item">
+          Строительная химия
+        </div>
+
+        <div class="side-item">
+          Другие материалы по проекту
         </div>
 
       </aside>
@@ -2709,17 +2545,17 @@
       <div class="section-head">
 
         <div class="section-label">
-          Порядок работы
+          Последовательность
         </div>
 
         <h2>
-          От исходных данных до монтажа
+          От расчёта до монтажа
         </h2>
 
         <p>
-          Объём этапов зависит
-          от того,
-          что уже подготовлено заказчиком.
+          Если часть этапов уже выполнена,
+          работа начинается
+          с текущего состояния объекта.
         </p>
 
       </div>
@@ -2736,11 +2572,10 @@
           </h3>
 
           <p>
-            Проект,
-            размеры,
-            объёмы,
-            фото
-            или описание объекта.
+            Размеры,
+            назначение,
+            регион
+            и имеющаяся документация.
           </p>
 
         </article>
@@ -2751,13 +2586,13 @@
           <strong>ЭТАП 02</strong>
 
           <h3>
-            Проверка
+            Расчёт
           </h3>
 
           <p>
-            Определяем,
-            какой информации
-            достаточно для расчёта.
+            Определяется
+            предполагаемый объём
+            материалов и работ.
           </p>
 
         </article>
@@ -2768,14 +2603,13 @@
           <strong>ЭТАП 03</strong>
 
           <h3>
-            Расчёт
+            Панели
           </h3>
 
           <p>
-            Определяются
-            материалы,
-            объёмы
-            и состав монтажных работ.
+            Проверяется
+            или подбирается
+            необходимая система панелей.
           </p>
 
         </article>
@@ -2786,13 +2620,14 @@
           <strong>ЭТАП 04</strong>
 
           <h3>
-            Комплектация
+            Подготовка
           </h3>
 
           <p>
-            При необходимости
-            подбираются панели
-            и сопутствующие материалы.
+            Уточняется
+            готовность объекта,
+            логистика
+            и условия монтажа.
           </p>
 
         </article>
@@ -2808,8 +2643,8 @@
 
           <p>
             Выполняется
-            согласованный
-            состав монтажных работ.
+            согласованный объём
+            монтажных работ.
           </p>
 
         </article>
@@ -2821,105 +2656,75 @@
   </section>
 
 
-  <!-- RELATED -->
-  <section>
+  <!-- ARTICLES -->
+  <section class="light">
 
     <div class="container">
 
       <div class="section-head">
 
         <div class="section-label">
-          Полезные разделы
+          Полезные материалы
         </div>
 
         <h2>
-          Продолжить по конкретной задаче
+          Перед выбором и монтажом
         </h2>
 
         <p>
-          Отдельные страницы
-          раскрывают выбор панелей,
-          стоимость,
-          монтаж
-          и связанные конструкции.
+          Два материала,
+          которые помогают
+          лучше подготовиться
+          к покупке панелей
+          и монтажным работам.
         </p>
 
       </div>
 
 
-      <div class="related-grid">
+      <div class="article-grid">
 
-        <article class="related-card">
+        <article class="article-card">
+
+          <span>Выбор материала</span>
 
           <h3>
-            Стеновые панели
+            Как выбрать сэндвич-панели
           </h3>
 
           <p>
-            Панели
-            для наружных
-            и внутренних стен здания.
+            Назначение здания,
+            стеновые и кровельные панели,
+            утеплитель,
+            толщина,
+            покрытие
+            и другие параметры выбора.
           </p>
 
-          <a href="wall-sandwich-panels.html">
-            Стеновые панели →
+          <a href="kak-vybrat-sendvich-paneli.html">
+            Читать материал →
           </a>
 
         </article>
 
 
-        <article class="related-card">
+        <article class="article-card">
+
+          <span>Монтаж</span>
 
           <h3>
-            Кровельные панели
+            10 ошибок монтажа сэндвич-панелей
           </h3>
 
           <p>
-            Панели
-            для утеплённой
-            кровли объекта.
+            Практические вопросы,
+            которые стоит учитывать
+            до начала
+            и во время монтажных работ.
           </p>
 
-          <a href="roof-sandwich-panels.html">
-            Кровельные панели →
-          </a>
-
-        </article>
-
-
-        <article class="related-card">
-
-          <h3>
-            Стоимость монтажа
-          </h3>
-
-          <p>
-            Что влияет
-            на стоимость
-            монтажных работ.
-          </p>
-
-          <a href="sandwich-panel-installation-price.html">
-            Цена монтажа →
-          </a>
-
-        </article>
-
-
-        <article class="related-card">
-
-          <h3>
-            Металлоконструкции
-          </h3>
-
-          <p>
-            Монтаж каркаса,
-            на который устанавливаются
-            ограждающие конструкции.
-          </p>
-
-          <a href="metal-structures-installation.html">
-            Металлоконструкции →
+          <a href="oshibki-montazha-sendvich-paneley.html">
+            Читать материал →
           </a>
 
         </article>
@@ -2939,34 +2744,34 @@
       <div class="cta-inner">
 
         <div class="section-label">
-          Ваш объект
+          Расчёт объекта
         </div>
 
         <h2>
-          Нужен расчёт сэндвич-панелей и монтажа?
+          Нужен монтаж сэндвич-панелей?
         </h2>
 
         <p>
-          Отправьте проект,
-          спецификацию,
-          ведомость объёмов,
-          размеры здания
-          или фотографии объекта.
-          Если части данных нет,
-          начнём с того,
-          что уже известно.
+          Передайте размеры объекта,
+          проект,
+          чертежи
+          или фотографии.
+          Если точных данных пока нет,
+          можно начать
+          с назначения здания
+          и примерных размеров.
         </p>
 
         <div class="hero-actions">
 
           <a class="btn btn-orange"
              href="calculation.html">
-            Рассчитать объект
+            Рассчитать монтаж
           </a>
 
           <a class="btn btn-white"
-             href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20рассчитать%20сэндвич-панели%20и%20монтаж">
-            Отправить в WhatsApp
+             href="https://wa.me/77056512203?text=Здравствуйте,%20нужен%20расчёт%20сэндвич-панелей%20и%20монтажа">
+            Отправить данные в WhatsApp
           </a>
 
         </div>
@@ -2986,7 +2791,7 @@
       <div class="section-head">
 
         <div class="section-label">
-          Вопросы
+          Частые вопросы
         </div>
 
         <h2>
@@ -2999,16 +2804,27 @@
       <details>
 
         <summary>
-          Можно заказать только монтаж, если панели уже куплены?
+          Сколько стоит монтаж сэндвич-панелей за м²?
         </summary>
 
         <p>
-          Да. Если материал уже приобретён,
-          можно передать проект,
-          объёмы,
-          спецификацию
-          и информацию об объекте
-          для расчёта монтажных работ.
+          Стоимость зависит
+          от типа панелей,
+          площади,
+          высоты объекта,
+          количества проёмов,
+          сложности узлов,
+          готовности каркаса,
+          условий подъёма материала
+          и региона.
+          Поэтому цена определяется
+          после получения исходных данных.
+          Подробнее —
+          на странице
+          <a href="sandwich-panel-installation-price.html"
+             style="color:#ff6500;font-weight:800;">
+            стоимости монтажа сэндвич-панелей
+          </a>.
         </p>
 
       </details>
@@ -3017,17 +2833,60 @@
       <details>
 
         <summary>
-          Можно подобрать и поставить панели?
+          Чем отличается монтаж стеновых и кровельных панелей?
         </summary>
 
         <p>
-          Да. При наличии
-          достаточных исходных данных
-          можно рассчитать
-          необходимые панели
-          и сопутствующие материалы
+          Это разные части
+          ограждающей системы здания.
+          Они отличаются
+          назначением,
+          расположением,
+          узлами,
+          примыканиями
+          и условиями выполнения работ.
+          Поэтому на сайте предусмотрены
+          отдельные разделы
+          по стеновым
+          и кровельным панелям.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Можно заказать монтаж, если панели уже куплены?
+        </summary>
+
+        <p>
+          Такой вариант можно рассмотреть.
+          Для расчёта потребуется информация
+          о панелях,
+          объекте,
+          проекте или размерах,
+          а также о готовности каркаса
+          и необходимых работах.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          PANEL MONTAGE может помочь с поставкой панелей?
+        </summary>
+
+        <p>
+          Да.
+          Если материал ещё не закуплен,
+          можно рассмотреть
+          подбор и поставку
           через сеть производителей
-          и поставщиков.
+          и поставщиков
+          с учётом задачи конкретного объекта.
         </p>
 
       </details>
@@ -3036,16 +2895,18 @@
       <details>
 
         <summary>
-          Что лучше: стеновые или кровельные панели?
+          Можно рассчитать монтаж по чертежам?
         </summary>
 
         <p>
-          Они предназначены
-          для разных частей здания.
-          Стеновые панели используются
-          для стеновых ограждающих конструкций,
-          кровельные —
-          для соответствующей конструкции кровли.
+          Да.
+          Можно передать проект,
+          чертежи,
+          эскизы,
+          размеры
+          и другие имеющиеся материалы.
+          При необходимости
+          будут уточнены дополнительные параметры.
         </p>
 
       </details>
@@ -3054,20 +2915,39 @@
       <details>
 
         <summary>
-          Можно рассчитать стоимость по площади?
+          Можно монтировать панели на уже готовый металлокаркас?
         </summary>
 
         <p>
-          Площадь позволяет получить
-          только предварительное представление.
-          Для более предметного расчёта
-          учитываются высота,
-          геометрия,
-          тип панелей,
-          проёмы,
+          Такой объект можно рассмотреть
+          после получения исходных данных
+          и оценки готовности конструкции
+          к последующему монтажу
+          ограждающих элементов.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Что может привести к протечкам или проблемам со стыками?
+        </summary>
+
+        <p>
+          Причины могут быть различными:
+          проектные решения,
+          состояние основания,
           узлы,
-          подъёмная техника
-          и условия объекта.
+          примыкания,
+          крепление,
+          герметизация,
+          комплектующие
+          и качество выполнения работ.
+          Поэтому важно рассматривать
+          всю систему,
+          а не только саму панель.
         </p>
 
       </details>
@@ -3076,37 +2956,16 @@
       <details>
 
         <summary>
-          Что делать, если проекта пока нет?
+          PANEL MONTAGE работает по всему Казахстану?
         </summary>
 
         <p>
-          Можно передать
-          назначение здания,
-          длину,
-          ширину,
-          высоту,
-          предполагаемый регион строительства
-          и другую имеющуюся информацию.
-          После этого определяется,
-          какой следующий этап необходим.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          Работаете ли вы в регионах Казахстана?
-        </summary>
-
-        <p>
-          Да. Рассматриваются объекты
-          в различных регионах Казахстана.
-          Логистика,
-          поставка материалов
-          и условия выполнения работ
-          рассчитываются по конкретному объекту.
+          Рассматриваются объекты
+          в разных регионах Казахстана.
+          При расчёте учитываются
+          местонахождение объекта,
+          логистика
+          и условия организации работ.
         </p>
 
       </details>
@@ -3195,7 +3054,7 @@
     </div>
 
     <div>
-      Сэндвич-панели • Материалы • Расчёт • Монтаж
+      Сэндвич-панели • Стены • Кровля • Материалы • Монтаж
     </div>
 
   </div>
@@ -3222,7 +3081,7 @@
 
 
   <a class="whatsapp"
-     href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20рассчитать%20монтаж%20сэндвич-панелей"
+     href="https://wa.me/77056512203?text=Здравствуйте,%20нужен%20расчёт%20монтажа%20сэндвич-панелей"
      aria-label="WhatsApp">
 
     <svg class="social-svg"
@@ -3243,7 +3102,7 @@
     Позвонить
   </a>
 
-  <a href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20рассчитать%20сэндвич-панели%20и%20монтаж">
+  <a href="https://wa.me/77056512203?text=Здравствуйте,%20нужен%20расчёт%20монтажа%20сэндвич-панелей">
     WhatsApp
   </a>
 
