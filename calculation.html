@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Рассчитать объект — проектирование, смета и монтаж | PANEL MONTAGE</title>
+
+<meta name="description" content="Рассчитать объект по Казахстану: предварительный расчёт, эскиз, проектирование, смета, монтаж сэндвич-панелей, металлоконструкций, фасадов и инженерных систем. PANEL MONTAGE.">
+
+<meta name="author" content="PANEL MONTAGE">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<meta name="google-site-verification"
+content="JCfYDoIXNCXyW6Dh3T9no6zFWqbVykZfOGUWoeHKo9U">
+
+<link rel="canonical"
+href="https://panelmontage-site.github.io/panelmontage-site/calculation.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_KZ">
+<meta property="og:site_name" content="PANEL MONTAGE">
+<meta property="og:title" content="Рассчитать объект | PANEL MONTAGE">
+<meta property="og:description" content="От идеи и исходных данных — к расчёту, эскизу, проекту, смете и монтажу объекта.">
+<meta property="og:url" content="https://panelmontage-site.github.io/panelmontage-site/calculation.html">
+<meta property="og:image" content="https://panelmontage-site.github.io/panelmontage-site/panels-orange.png.png">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P496SPGLG9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P496SPGLG9');
+</script>
+
+<style>
+:root{
+  --orange:#ff6500;
+  --orange-hover:#ff7a1a;
+  --dark:#0f172a;
+  --dark2:#111827;
+  --card:#1e293b;
+  --gray:#cbd5e1;
+  --muted:#94a3b8;
+  --green:#25d366;
+  --border:#334155;
+  --white:#ffffff;
+  --red:#ef4444;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--dark);
+  color:#fff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button,
+input,
+select,
+textarea{
+  font:inherit;
+}
+
+/* HEADER */
+
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(15,23,42,.95);
+  backdrop-filter:blur(12px);
+  border-bottom:2px solid rgba(255,101,0,.45);
+  padding:14px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:900;
+  letter-spacing:2px;
+  white-space:nowrap;
+}
+
+.logo span{
+  color:var(--orange);
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.nav a{
+  color:#e5e7eb;
+  font-weight:700;
+  font-size:15px;
+}
+
+.nav a:hover{
+  color:var(--orange);
+}
+
+.nav .nav-cta{
+  background:var(--orange);
+  color:#fff;
+  padding:10px 16px;
+  border-radius:8px;
+}
+
+.nav .nav-cta:hover{
+  background:var(--orange-hover);
+  color:#fff;
+}
+
+.menu-button{
+  display:none;
+  width:46px;
+  height:46px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:#1f2937;
+  color:#fff;
+  font-size:25px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  min-height:620px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15,23,42,.97),
+      rgba(15,23,42,.82),
+      rgba(255,101,0,.22)
+    ),
+    url("panels-orange.png.png") center/cover no-repeat;
+
+  display:flex;
+  align-items:center;
+  padding:145px 7% 85px;
+}
+
+.hero-content{
+  max-width:950px;
+}
+
+.badge{
+  display:inline-block;
+  background:var(--orange);
+  padding:10px 19px;
+  border-radius:30px;
+  font-weight:900;
+  margin-bottom:24px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  font-size:14px;
+}
+
+h1{
+  font-size:58px;
+  line-height:1.07;
+  margin-bottom:25px;
+  text-transform:uppercase;
+}
+
+h1 span{
+  color:var(--orange);
+}
+
+.hero p{
+  max-width:850px;
+  color:#e5e7eb;
+  font-size:22px;
+  line-height:1.55;
+  margin-bottom:30px;
+}
+
+.hero-points{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.hero-point{
+  background:rgba(17,24,39,.78);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:30px;
+  padding:9px 15px;
+  font-weight:700;
+  font-size:14px;
+}
+
+/* GENERAL */
+
+.section{
+  padding:80px 7%;
+}
+
+.section-light{
+  background:#f8fafc;
+  color:var(--dark);
+}
+
+.section-title{
+  text-align:center;
+  max-width:1050px;
+  margin:0 auto 45px;
+}
+
+.section-title h2{
+  font-size:40px;
+  line-height:1.15;
+  margin-bottom:15px;
+}
+
+.section-title p{
+  color:var(--gray);
+  font-size:18px;
+}
+
+.section-light .section-title p{
+  color:#475569;
+}
+
+/* INTRO */
+
+.entry-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.entry-card{
+  background:linear-gradient(180deg,#1e293b,#111827);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:32px;
+}
+
+.entry-card strong{
+  display:block;
+  color:var(--orange);
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.entry-card p{
+  color:var(--gray);
+}
+
+/* FORM */
+
+.form-shell{
+  max-width:1150px;
+  margin:0 auto;
+  background:#fff;
+  border-radius:22px;
+  box-shadow:0 30px 90px rgba(0,0,0,.18);
+  overflow:hidden;
+}
+
+.form-top{
+  background:
+    linear-gradient(90deg,rgba(15,23,42,.97),rgba(15,23,42,.86)),
+    url("project.png.jpeg") center/cover no-repeat;
+  color:#fff;
+  padding:38px 42px;
+}
+
+.form-top h2{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.form-top p{
+  color:#cbd5e1;
+  max-width:850px;
+}
+
+.form-body{
+  padding:42px;
+}
+
+.form-section{
+  padding-bottom:36px;
+  margin-bottom:36px;
+  border-bottom:1px solid #e2e8f0;
+}
+
+.form-section:last-of-type{
+  border-bottom:0;
+}
+
+.form-section h3{
+  font-size:25px;
+  color:var(--dark);
+  margin-bottom:8px;
+}
+
+.form-help{
+  color:#64748b;
+  margin-bottom:22px;
+}
+
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.field{
+  margin-bottom:20px;
+}
+
+.field label{
+  display:block;
+  font-weight:800;
+  color:#1e293b;
+  margin-bottom:8px;
+}
+
+.required{
+  color:var(--orange);
+}
+
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  border:1px solid #cbd5e1;
+  border-radius:10px;
+  padding:14px 15px;
+  background:#fff;
+  color:#0f172a;
+  outline:none;
+  transition:.2s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  border-color:var(--orange);
+  box-shadow:0 0 0 3px rgba(255,101,0,.12);
+}
+
+.field textarea{
+  min-height:145px;
+  resize:vertical;
+}
+
+/* SERVICES */
+
+.service-options{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.check-card{
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  padding:15px;
+  border:1px solid #cbd5e1;
+  border-radius:10px;
+  cursor:pointer;
+  background:#fff;
+  transition:.2s;
+}
+
+.check-card:hover{
+  border-color:var(--orange);
+  background:#fff7ed;
+}
+
+.check-card input{
+  width:18px;
+  height:18px;
+  margin-top:3px;
+  accent-color:var(--orange);
+}
+
+.check-card span{
+  color:#1e293b;
+  font-weight:700;
+}
+
+/* FILES */
+
+.file-box{
+  border:2px dashed #94a3b8;
+  border-radius:14px;
+  padding:28px;
+  text-align:center;
+  background:#f8fafc;
+}
+
+.file-box strong{
+  display:block;
+  color:#0f172a;
+  font-size:19px;
+  margin-bottom:7px;
+}
+
+.file-box p{
+  color:#64748b;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.file-box input{
+  width:100%;
+  max-width:520px;
+}
+
+.file-list{
+  margin-top:15px;
+  text-align:left;
+  color:#475569;
+  font-size:14px;
+}
+
+.file-item{
+  padding:6px 0;
+  border-bottom:1px solid #e2e8f0;
+}
+
+/* CONSENT */
+
+.consent{
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  margin-bottom:15px;
+}
+
+.consent input{
+  width:18px;
+  height:18px;
+  margin-top:4px;
+  accent-color:var(--orange);
+}
+
+.consent label{
+  color:#475569;
+  font-size:14px;
+}
+
+/* SUBMIT */
+
+.submit-area{
+  margin-top:25px;
+}
+
+.submit-btn{
+  width:100%;
+  border:0;
+  border-radius:10px;
+  padding:18px 25px;
+  background:var(--orange);
+  color:#fff;
+  font-size:18px;
+  font-weight:900;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.submit-btn:hover{
+  background:var(--orange-hover);
+}
+
+.submit-btn:disabled{
+  opacity:.65;
+  cursor:wait;
+}
+
+.form-status{
+  display:none;
+  margin-top:20px;
+  border-radius:12px;
+  padding:18px;
+  font-weight:700;
+}
+
+.form-status.success{
+  display:block;
+  background:#dcfce7;
+  border:1px solid #86efac;
+  color:#166534;
+}
+
+.form-status.error{
+  display:block;
+  background:#fee2e2;
+  border:1px solid #fca5a5;
+  color:#991b1b;
+}
+
+/* PROCESS */
+
+.process{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.process-card{
+  background:linear-gradient(180deg,#1e293b,#111827);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:27px;
+}
+
+.process-number{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:var(--orange);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  margin-bottom:17px;
+}
+
+.process-card h3{
+  margin-bottom:9px;
+}
+
+.process-card p{
+  color:var(--gray);
+}
+
+/* CTA */
+
+.cta{
+  background:
+    linear-gradient(90deg,rgba(255,101,0,.94),rgba(220,38,38,.86)),
+    url("montage.png.jpeg") center/cover no-repeat;
+  text-align:center;
+  padding:85px 7%;
+}
+
+.cta h2{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.cta p{
+  font-size:20px;
+  margin-bottom:28px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 24px;
+  border-radius:8px;
+  font-weight:900;
+}
+
+.btn-dark{
+  background:#111827;
+  color:#fff;
+}
+
+.btn-green{
+  background:var(--green);
+  color:#fff;
+}
+
+/* FOOTER */
+
+.city-line{
+  text-align:center;
+  color:#e5e7eb;
+  background:#111827;
+  padding:30px 7%;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  line-height:1.8;
+}
+
+.footer{
+  background:#020617;
+  padding:45px 7% 100px;
+  text-align:center;
+  color:var(--gray);
+}
+
+.footer h3{
+  color:#fff;
+  font-size:27px;
+  margin-bottom:12px;
+}
+
+.footer p{
+  margin:7px 0;
+}
+
+.footer a:hover{
+  color:var(--orange);
+}
+
+/* FIXED SOCIAL */
+
+.social-fixed{
+  position:fixed;
+  right:20px;
+  bottom:22px;
+  z-index:1500;
+  display:flex;
+  flex-direction:column;
+  gap:11px;
+}
+
+.social-button{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:900;
+  box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+
+.social-whatsapp{
+  background:var(--green);
+  font-size:24px;
+}
+
+.social-instagram{
+  background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+  font-size:22px;
+}
+
+/* MOBILE BOTTOM */
+
+.mobile-actions{
+  display:none;
+}
+
+/* HONEYPOT */
+
+.website-field{
+  position:absolute !important;
+  left:-10000px !important;
+  width:1px !important;
+  height:1px !important;
+  overflow:hidden !important;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1050px){
+  .nav{
+    gap:12px;
+  }
+
+  .nav a{
+    font-size:13px;
+  }
+
+  h1{
+    font-size:48px;
+  }
+
+  .process{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:850px){
+
+  .header{
+    padding:12px 5%;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+
+  .menu-button{
+    display:block;
+  }
+
+  .nav{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    right:0;
+    background:#0f172a;
+    padding:16px 5% 22px;
+    border-bottom:2px solid var(--orange);
+    flex-direction:column;
+    align-items:stretch;
+    gap:8px;
+  }
+
+  .nav.open{
+    display:flex;
+  }
+
+  .nav a{
+    display:block;
+    padding:12px 13px;
+    background:#1f2937;
+    border-radius:8px;
+    font-size:15px;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:125px 5% 70px;
+  }
+
+  h1{
+    font-size:37px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .section{
+    padding:60px 5%;
+  }
+
+  .section-title h2{
+    font-size:31px;
+  }
+
+  .entry-grid,
+  .grid-2,
+  .grid-3,
+  .service-options{
+    grid-template-columns:1fr;
+  }
+
+  .form-top{
+    padding:30px 22px;
+  }
+
+  .form-top h2{
+    font-size:28px;
+  }
+
+  .form-body{
+    padding:25px 20px;
+  }
+
+  .process{
+    grid-template-columns:1fr;
+  }
+
+  .social-fixed{
+    display:none;
+  }
+
+  .mobile-actions{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:2000;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background:#020617;
+    border-top:1px solid #334155;
+  }
+
+  .mobile-actions a{
+    min-height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:13px;
+    font-weight:900;
+    padding:8px 4px;
+  }
+
+  .mobile-call{
+    background:#1f2937;
+  }
+
+  .mobile-wa{
+    background:var(--green);
+  }
+
+  .mobile-calc{
+    background:var(--orange);
+  }
+}
+
+@media(max-width:480px){
+  h1{
+    font-size:32px;
+  }
+
+  .badge{
+    font-size:12px;
+  }
+
+  .hero-point{
+    font-size:12px;
+  }
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"Расчёт объекта",
+  "provider":{
+    "@type":"Organization",
+    "name":"PANEL MONTAGE",
+    "url":"https://panelmontage-site.github.io/panelmontage-site/",
+    "email":"montaj.panel.kz@gmail.com",
+    "telephone":"+77056512203"
+  },
+  "areaServed":{
+    "@type":"Country",
+    "name":"Kazakhstan"
+  },
+  "description":"Приём исходных данных для расчёта, эскиза, проектирования, сметы и строительно-монтажных работ."
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+  <a class="logo" href="index.html" aria-label="PANEL MONTAGE — главная">
+    PANEL <span>MONTAGE</span>
+  </a>
+
+  <button
+    class="menu-button"
+    id="menuButton"
+    type="button"
+    aria-label="Открыть меню"
+    aria-expanded="false">
+    ☰
+  </button>
+
+  <nav class="nav" id="mainNav">
+    <a href="index.html">Главная</a>
+    <a href="sandwich-panels.html">Сэндвич-панели</a>
+    <a href="hangars.html">Ангары</a>
+    <a href="facade-panels.html">Фасады</a>
+    <a href="blog.html">Блог</a>
+    <a href="#contacts">Контакты</a>
+    <a class="nav-cta" href="#calculation-form">Рассчитать объект</a>
+  </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="badge">
+      Проектирование • расчёты • строительство • монтаж
+    </div>
+
+    <h1>
+      Рассчитать <span>объект</span>
+    </h1>
+
+    <p>
+      Можно обратиться даже тогда, когда есть только идея объекта.
+      Опишите задачу и передайте имеющиеся исходные данные.
+      Команда PANEL MONTAGE поможет определить, какая информация
+      необходима для дальнейшего расчёта, эскиза, проекта,
+      сметы или строительно-монтажных работ.
+    </p>
+
+    <div class="hero-points">
+      <div class="hero-point">Есть только идея</div>
+      <div class="hero-point">Есть размеры объекта</div>
+      <div class="hero-point">Есть готовый проект</div>
+      <div class="hero-point">Есть смета</div>
+      <div class="hero-point">Есть чертежи и файлы</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="section-title">
+    <h2>Начать можно с любого этапа</h2>
+    <p>
+      Необязательно заранее иметь полный комплект проектной документации.
+      Укажите то, что уже известно об объекте.
+    </p>
+  </div>
+
+  <div class="entry-grid">
+
+    <div class="entry-card">
+      <strong>У меня только идея</strong>
+      <p>
+        Опишите назначение будущего объекта, предполагаемое место
+        строительства, ориентировочные размеры и задачу.
+        Специалисты определят, какие исходные данные необходимо
+        получить для следующего этапа.
+      </p>
+    </div>
+
+    <div class="entry-card">
+      <strong>У меня уже есть проект</strong>
+      <p>
+        Передайте имеющиеся чертежи, ведомости, смету или другие
+        материалы. Они помогут быстрее определить объёмы и состав
+        необходимых работ.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section section-light" id="calculation-form">
+
+  <div class="form-shell">
+
+    <div class="form-top">
+
+      <h2>Данные для расчёта объекта</h2>
+
+      <p>
+        Заполните известную информацию. Поля, которых вы пока
+        не знаете, можно оставить пустыми. После получения заявки
+        специалисты PANEL MONTAGE смогут связаться с вами для
+        уточнения исходных данных.
+      </p>
+
+    </div>
+
+    <form
+      class="form-body"
+      id="calculationForm"
+      enctype="multipart/form-data"
+      novalidate>
+
+      <!-- HONEYPOT -->
+      <div class="website-field" aria-hidden="true">
+        <label>
+          Website
+          <input
+            type="text"
+            name="website"
+            tabindex="-1"
+            autocomplete="off">
+        </label>
+      </div>
+
+
+      <!-- CLIENT -->
+
+      <div class="form-section">
+
+        <h3>1. Контактные данные</h3>
+
+        <p class="form-help">
+          Чтобы мы могли уточнить исходные данные и сообщить результат.
+        </p>
+
+        <div class="grid-2">
+
+          <div class="field">
+            <label for="full_name">
+              Имя <span class="required">*</span>
+            </label>
+
+            <input
+              id="full_name"
+              name="full_name"
+              type="text"
+              maxlength="120"
+              autocomplete="name"
+              required>
+          </div>
+
+          <div class="field">
+            <label for="phone">
+              Телефон <span class="required">*</span>
+            </label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              maxlength="40"
+              autocomplete="tel"
+              placeholder="+7 7XX XXX XX XX"
+              required>
+          </div>
+
+        </div>
+
+        <div class="grid-2">
+
+          <div class="field">
+            <label for="whatsapp">WhatsApp</label>
+
+            <input
+              id="whatsapp"
+              name="whatsapp"
+              type="tel"
+              maxlength="40"
+              placeholder="Если отличается от телефона">
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              maxlength="180"
+              autocomplete="email">
+          </div>
+
+        </div>
+
+        <div class="field">
+          <label for="company_name">
+            Компания / организация
+          </label>
+
+          <input
+            id="company_name"
+            name="company_name"
+            type="text"
+            maxlength="180"
+            autocomplete="organization">
+        </div>
+
+        <input
+          type="hidden"
+          name="preferred_language"
+          value="ru">
+
+      </div>
+
+
+      <!-- OBJECT -->
+
+      <div class="form-section">
+
+        <h3>2. Объект</h3>
+
+        <p class="form-help">
+          Укажите известные сведения о будущем или существующем объекте.
+        </p>
+
+        <div class="grid-2">
+
+          <div class="field">
+            <label for="project_name">
+              Название объекта
+            </label>
+
+            <input
+              id="project_name"
+              name="project_name"
+              type="text"
+              maxlength="200"
+              placeholder="Например: склад, цех, СТО">
+          </div>
+
+          <div class="field">
+            <label for="object_type">
+              Назначение объекта
+            </label>
+
+            <select id="object_type" name="object_type">
+              <option value="">Выберите</option>
+              <option value="warehouse">Склад</option>
+              <option value="industrial">Производственное здание / цех</option>
+              <option value="hangar">Ангар</option>
+              <option value="commercial">Коммерческий объект</option>
+              <option value="logistics">Логистический объект</option>
+              <option value="cold_storage">Холодильное помещение</option>
+              <option value="service_station">СТО / технический объект</option>
+              <option value="medical">Медицинский объект</option>
+              <option value="agricultural">Сельскохозяйственный объект</option>
+              <option value="other">Другой объект</option>
+            </select>
+          </div>
+
+        </div>
+
+
+        <div class="grid-3">
+
+          <div class="field">
+            <label for="region">Область / регион</label>
+            <input id="region" name="region" type="text" maxlength="120">
+          </div>
+
+          <div class="field">
+            <label for="city">Город / район</label>
+            <input id="city" name="city" type="text" maxlength="120">
+          </div>
+
+          <div class="field">
+            <label for="address">Адрес / локация</label>
+            <input id="address" name="address" type="text" maxlength="250">
+          </div>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="project_stage">
+            На каком этапе находится объект?
+          </label>
+
+          <select id="project_stage" name="project_stage">
+            <option value="">Выберите</option>
+            <option value="idea">Пока только идея</option>
+            <option value="land">Есть земельный участок</option>
+            <option value="sketch">Есть эскиз</option>
+            <option value="design">Есть проект</option>
+            <option value="estimate">Есть смета</option>
+            <option value="construction">Строительство уже начато</option>
+            <option value="existing">Существующий объект</option>
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <!-- DIMENSIONS -->
+
+      <div class="form-section">
+
+        <h3>3. Размеры</h3>
+
+        <p class="form-help">
+          Если точных размеров ещё нет — оставьте поля пустыми.
+        </p>
+
+        <div class="grid-3">
+
+          <div class="field">
+            <label for="length_m">Длина, м</label>
+            <input
+              id="length_m"
+              name="length_m"
+              type="number"
+              min="0"
+              step="0.01">
+          </div>
+
+          <div class="field">
+            <label for="width_m">Ширина, м</label>
+            <input
+              id="width_m"
+              name="width_m"
+              type="number"
+              min="0"
+              step="0.01">
+          </div>
+
+          <div class="field">
+            <label for="height_m">Высота, м</label>
+            <input
+              id="height_m"
+              name="height_m"
+              type="number"
+              min="0"
+              step="0.01">
+          </div>
+
+        </div>
+
+        <div class="grid-2">
+
+          <div class="field">
+            <label for="area_m2">Площадь, м²</label>
+            <input
+              id="area_m2"
+              name="area_m2"
+              type="number"
+              min="0"
+              step="0.01">
+          </div>
+
+          <div class="field">
+
+            <label for="land_available">
+              Земельный участок
+            </label>
+
+            <select id="land_available" name="land_available">
+              <option value="">Не указано</option>
+              <option value="true">Есть</option>
+              <option value="false">Пока нет</option>
+            </select>
+
+          </div>
+
+        </div>
+
+        <div class="field">
+
+          <label for="desired_start_date">
+            Желаемая дата начала работ
+          </label>
+
+          <input
+            id="desired_start_date"
+            name="desired_start_date"
+            type="date">
+
+        </div>
+
+      </div>
+
+
+      <!-- SERVICES -->
+
+      <div class="form-section">
+
+        <h3>4. Что необходимо?</h3>
+
+        <p class="form-help">
+          Можно выбрать несколько вариантов.
+        </p>
+
+        <div class="service-options">
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="object_calculation">
+            <span>Предварительный расчёт объекта</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="sketch">
+            <span>Разработка эскиза</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="project_design">
+            <span>Разработка проекта</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="estimate">
+            <span>Расчёт сметной стоимости</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="installation">
+            <span>Расчёт монтажных работ</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="metal_structures">
+            <span>Металлоконструкции</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="sandwich_panels">
+            <span>Сэндвич-панели</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="facade">
+            <span>Фасадные работы</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="ventilation">
+            <span>Приточно-вытяжная вентиляция</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="air_conditioning">
+            <span>Кондиционирование</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="cold_storage">
+            <span>Холодильные помещения</span>
+          </label>
+
+          <label class="check-card">
+            <input type="checkbox" name="services" value="specialized">
+            <span>Специализированные строительные работы</span>
+          </label>
+
+        </div>
+
+      </div>
+
+
+      <!-- DESCRIPTION -->
+
+      <div class="form-section">
+
+        <h3>5. Опишите задачу</h3>
+
+        <p class="form-help">
+          Можно написать своими словами — даже если техническое
+          задание ещё не сформировано.
+        </p>
+
+        <div class="field">
+
+          <label for="description">
+            Что планируется построить или выполнить?
+          </label>
+
+          <textarea
+            id="description"
+            name="description"
+            maxlength="5000"
+            placeholder="Например: есть участок, планируем склад ориентировочно 60 × 30 м. Нужен предварительный расчёт, затем проект и предложение по строительству..."></textarea>
+
+        </div>
+
+        <div class="field">
+
+          <label for="client_message">
+            Дополнительная информация
+          </label>
+
+          <textarea
+            id="client_message"
+            name="client_message"
+            maxlength="5000"
+            placeholder="Сроки, материалы, особенности объекта, вопросы или другая важная информация."></textarea>
+
+        </div>
+
+      </div>
+
+
+      <!-- FILES -->
+
+      <div class="form-section">
+
+        <h3>6. Файлы по объекту</h3>
+
+        <p class="form-help">
+          Если материалы уже есть, приложите их к заявке.
+        </p>
+
+        <div class="file-box">
+
+          <strong>
+            Проект, чертежи, смета, фотографии или другие материалы
+          </strong>
+
+          <p>
+            PDF, DWG, DXF, XLS/XLSX, DOC/DOCX, JPG, PNG, WEBP или ZIP.
+            Не более 10 файлов.
+          </p>
+
+          <input
+            id="files"
+            name="files"
+            type="file"
+            multiple
+            accept=".pdf,.dwg,.dxf,.xls,.xlsx,.doc,.docx,.jpg,.jpeg,.png,.webp,.zip">
+
+          <div class="file-list" id="fileList"></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONSENT -->
+
+      <div class="form-section">
+
+        <h3>7. Отправка заявки</h3>
+
+        <div class="consent">
+
+          <input
+            id="privacy_accepted"
+            name="privacy_accepted"
+            type="checkbox"
+            value="true"
+            required>
+
+          <label for="privacy_accepted">
+            Я предоставляю указанные в форме данные для обработки
+            моего обращения и обратной связи по данной заявке.
+            <span class="required">*</span>
+          </label>
+
+        </div>
+
+        <div class="consent">
+
+          <input
+            id="contact_accepted"
+            name="contact_accepted"
+            type="checkbox"
+            value="true">
+
+          <label for="contact_accepted">
+            Я согласен получать информацию от PANEL MONTAGE
+            о связанных с моим объектом проектных,
+            строительных и монтажных услугах.
+          </label>
+
+        </div>
+
+        <input
+          type="hidden"
+          name="request_type"
+          value="object_calculation">
+
+        <input
+          type="hidden"
+          name="source_page"
+          value="calculation.html">
+
+        <div class="submit-area">
+
+          <button
+            class="submit-btn"
+            id="submitButton"
+            type="submit">
+            Отправить данные для расчёта
+          </button>
+
+          <div
+            class="form-status"
+            id="formStatus"
+            role="status"
+            aria-live="polite">
+          </div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="section-title">
+
+    <h2>Что происходит после отправки?</h2>
+
+    <p>
+      Заявка фиксируется вместе с исходными данными и переданными
+      материалами объекта.
+    </p>
+
+  </div>
+
+  <div class="process">
+
+    <div class="process-card">
+      <div class="process-number">1</div>
+      <h3>Получаем данные</h3>
+      <p>
+        Контактные данные, сведения об объекте и приложенные материалы
+        поступают в систему.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <div class="process-number">2</div>
+      <h3>Определяем задачу</h3>
+      <p>
+        Специалист изучает исходную информацию и определяет,
+        что необходимо уточнить для дальнейшей работы.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <div class="process-number">3</div>
+      <h3>Связываемся</h3>
+      <p>
+        При необходимости уточняем параметры объекта,
+        состав работ и имеющиеся документы.
+      </p>
+    </div>
+
+    <div class="process-card">
+      <div class="process-number">4</div>
+      <h3>Следующий этап</h3>
+      <p>
+        В зависимости от задачи определяется дальнейшая работа:
+        расчёт, эскиз, проект, смета или монтаж.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cta">
+
+  <h2>Есть проект или чертежи?</h2>
+
+  <p>
+    Их можно приложить к форме выше или предварительно обсудить объект
+    с PANEL MONTAGE.
+  </p>
+
+  <div class="buttons">
+
+    <a
+      class="btn btn-green"
+      href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20обсудить%20расчёт%20объекта">
+      Написать в WhatsApp
+    </a>
+
+    <a
+      class="btn btn-dark"
+      href="tel:+77056512203">
+      Позвонить
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<div class="city-line">
+  Алматы • Астана • Шымкент • Караганда • Атырау • Актау •
+  Актобе • Павлодар • Семей • Усть-Каменогорск •
+  Костанай • Тараз • Туркестан • Весь Казахстан
+</div>
+
+
+<footer class="footer" id="contacts">
+
+  <h3>PANEL MONTAGE</h3>
+
+  <p>
+    Проектирование, расчёты, строительство и монтаж объектов
+    по Казахстану.
+  </p>
+
+  <p>
+    Телефон / WhatsApp:
+    <a href="tel:+77056512203">
+      +7 705 651 22 03
+    </a>
+  </p>
+
+  <p>
+    Email:
+    <a href="mailto:montaj.panel.kz@gmail.com">
+      montaj.panel.kz@gmail.com
+    </a>
+  </p>
+
+  <p>
+    <a
+      href="https://www.instagram.com/panelmontage.kz"
+      target="_blank"
+      rel="noopener noreferrer">
+      Instagram: @panelmontage.kz
+    </a>
+  </p>
+
+  <p>
+    Алматы • Казахстан • Работаем по регионам Республики Казахстан
+  </p>
+
+</footer>
+
+
+<!-- DESKTOP SOCIAL -->
+
+<div class="social-fixed">
+
+  <a
+    class="social-button social-instagram"
+    href="https://www.instagram.com/panelmontage.kz"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="PANEL MONTAGE в Instagram">
+    ◎
+  </a>
+
+  <a
+    class="social-button social-whatsapp"
+    href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20обсудить%20объект"
+    aria-label="Написать PANEL MONTAGE в WhatsApp">
+    W
+  </a>
+
+</div>
+
+
+<!-- MOBILE ACTION BAR -->
+
+<div class="mobile-actions">
+
+  <a
+    class="mobile-call"
+    href="tel:+77056512203">
+    Позвонить
+  </a>
+
+  <a
+    class="mobile-wa"
+    href="https://wa.me/77056512203?text=Здравствуйте,%20хочу%20обсудить%20объект">
+    WhatsApp
+  </a>
+
+  <a
+    class="mobile-calc"
+    href="#calculation-form">
+    Рассчитать
+  </a>
+
+</div>
+
+
+<script>
+const ENDPOINT =
+  "https://umgphbwdvnutgymvgaee.supabase.co/functions/v1/submit-request";
+
+const form = document.getElementById("calculationForm");
+const submitButton = document.getElementById("submitButton");
+const formStatus = document.getElementById("formStatus");
+const fileInput = document.getElementById("files");
+const fileList = document.getElementById("fileList");
+
+const menuButton = document.getElementById("menuButton");
+const mainNav = document.getElementById("mainNav");
+
+
+/* MOBILE MENU */
+
+menuButton.addEventListener("click", function(){
+
+  const open = mainNav.classList.toggle("open");
+
+  menuButton.setAttribute(
+    "aria-expanded",
+    open ? "true" : "false"
+  );
+
+  menuButton.textContent = open ? "×" : "☰";
+
+});
+
+
+mainNav.querySelectorAll("a").forEach(function(link){
+
+  link.addEventListener("click", function(){
+
+    if(window.innerWidth <= 850){
+
+      mainNav.classList.remove("open");
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      menuButton.textContent = "☰";
+
+    }
+
+  });
+
+});
+
+
+/* FILE LIST */
+
+fileInput.addEventListener("change", function(){
+
+  fileList.innerHTML = "";
+
+  const files = Array.from(fileInput.files);
+
+  if(files.length === 0){
+    return;
+  }
+
+  if(files.length > 10){
+
+    fileInput.value = "";
+
+    fileList.innerHTML =
+      "<strong>Можно приложить не более 10 файлов.</strong>";
+
+    return;
+
+  }
+
+  files.forEach(function(file){
+
+    const row = document.createElement("div");
+
+    row.className = "file-item";
+
+    const mb =
+      (file.size / 1024 / 1024).toFixed(2);
+
+    row.textContent =
+      file.name + " — " + mb + " MB";
+
+    fileList.appendChild(row);
+
+  });
+
+});
+
+
+/* FORM */
+
+form.addEventListener("submit", async function(event){
+
+  event.preventDefault();
+
+  formStatus.className = "form-status";
+  formStatus.textContent = "";
+
+  if(!form.checkValidity()){
+
+    form.reportValidity();
+    return;
+
+  }
+
+  const files =
+    Array.from(fileInput.files || []);
+
+  if(files.length > 10){
+
+    showError(
+      "Можно приложить не более 10 файлов."
+    );
+
+    return;
+
+  }
+
+
+  /*
+    Пока файлы передаются вместе с заявкой.
+
+    Перед окончательным публичным запуском сайта
+    для крупных проектных файлов мы отдельно
+    переведём загрузку на private Storage
+    через подписанные upload URL.
+  */
+
+  const formData =
+    new FormData(form);
+
+
+  /*
+    Несколько services превращаем
+    в повторяющиеся поля FormData.
+    Edge Function получает их через getAll().
+  */
+
+  formData.delete("services");
+
+  document
+    .querySelectorAll(
+      'input[name="services"]:checked'
+    )
+    .forEach(function(item){
+
+      formData.append(
+        "services",
+        item.value
+      );
+
+    });
+
+
+  /*
+    Явно добавляем файлы.
+  */
+
+  formData.delete("files");
+
+  files.forEach(function(file){
+
+    formData.append(
+      "files",
+      file,
+      file.name
+    );
+
+  });
+
+
+  submitButton.disabled = true;
+
+  submitButton.textContent =
+    "Отправляем заявку...";
+
+
+  try{
+
+    const response =
+      await fetch(
+        ENDPOINT,
+        {
+          method:"POST",
+          body:formData
+        }
+      );
+
+
+    let result = {};
+
+    try{
+      result = await response.json();
+    }
+    catch(parseError){
+      result = {};
+    }
+
+
+    if(!response.ok){
+
+      const message =
+        result.error ||
+        result.message ||
+        "Сервер не принял заявку.";
+
+      throw new Error(message);
+
+    }
+
+
+    const requestNumber =
+      result.request_number ||
+      result.requestNumber ||
+      result.number ||
+      "";
+
+
+    formStatus.className =
+      "form-status success";
+
+
+    if(requestNumber){
+
+      formStatus.innerHTML =
+        "Заявка успешно отправлена.<br>" +
+        "Номер заявки: <strong>" +
+        escapeHtml(String(requestNumber)) +
+        "</strong>.";
+
+    }
+    else{
+
+      formStatus.textContent =
+        "Заявка успешно отправлена. " +
+        "Специалисты PANEL MONTAGE получили ваши данные.";
+
+    }
+
+
+    /*
+      Analytics event
+    */
+
+    if(typeof gtag === "function"){
+
+      gtag(
+        "event",
+        "generate_lead",
+        {
+          event_category:"calculation",
+          event_label:"PANEL MONTAGE calculation form"
+        }
+      );
+
+    }
+
+
+    form.reset();
+
+    fileList.innerHTML = "";
+
+    formStatus.scrollIntoView({
+      behavior:"smooth",
+      block:"center"
+    });
+
+  }
+  catch(error){
+
+    console.error(error);
+
+    showError(
+      "Не удалось отправить заявку. " +
+      "Проверьте соединение и повторите попытку. " +
+      "Если проблема сохранится, свяжитесь с нами по WhatsApp или телефону."
+    );
+
+  }
+  finally{
+
+    submitButton.disabled = false;
+
+    submitButton.textContent =
+      "Отправить данные для расчёта";
+
+  }
+
+});
+
+
+function showError(message){
+
+  formStatus.className =
+    "form-status error";
+
+  formStatus.textContent =
+    message;
+
+  formStatus.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
+  });
+
+}
+
+
+function escapeHtml(value){
+
+  return value.replace(
+    /[&<>"']/g,
+    function(character){
+
+      const entities = {
+        "&":"&amp;",
+        "<":"&lt;",
+        ">":"&gt;",
+        '"':"&quot;",
+        "'":"&#039;"
+      };
+
+      return entities[character];
+
+    }
+  );
+
+}
+</script>
+
+</body>
+</html>
