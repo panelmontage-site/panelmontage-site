@@ -2,59 +2,176 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/</loc>
-<lastmod>2026-06-12</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
+  <!-- Главная -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/</loc>
+  </url>
 
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/sandwich-panels.html</loc>
-<lastmod>2026-06-12</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+  <!-- Основные страницы -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/about.html</loc>
+  </url>
 
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/hangars.html</loc>
-<lastmod>2026-06-12</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/projects.html</loc>
+  </url>
 
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/facade-panels.html</loc>
-<lastmod>2026-06-12</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/licenses-qualifications.html</loc>
+  </url>
 
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/facade-cassettes.html</loc>
-<lastmod>2026-06-12</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/blog.html</loc>
-<lastmod>2026-06-15</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/contacts.html</loc>
+  </url>
 
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/oshibki-montazha-sendvich-paneley.html</loc>
-<lastmod>2026-06-15</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/kazakhstan.html</loc>
+  </url>
 
-<url>
-<loc>https://panelmontage-site.github.io/panelmontage-site/kak-vybrat-sendvich-paneli.html</loc>
-<lastmod>2026-06-15</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/construction-contract-kazakhstan.html</loc>
+  </url>
+
+
+  <!-- Проектирование и расчёты -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/calculation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/sketch-design.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/project-design.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/construction-estimate.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/installation-calculation.html</loc>
+  </url>
+
+
+  <!-- Материалы -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/materials.html</loc>
+  </url>
+
+
+  <!-- Сэндвич-панели -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/sandwich-panels.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/wall-sandwich-panels.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/roof-sandwich-panels.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/sandwich-panel-installation-price.html</loc>
+  </url>
+
+
+  <!-- Металлоконструкции и объекты -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/metal-structures-installation.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/hangars.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/warehouses.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/industrial-buildings.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/commercial-buildings.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/logistics-centers.html</loc>
+  </url>
+
+
+  <!-- Фасады -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/facade-panels.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/facade-cassettes.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/ventilated-facades.html</loc>
+  </url>
+
+
+  <!-- Инженерные системы -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/ventilation-kazakhstan.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/air-conditioning-kazakhstan.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/cold-storage-panels.html</loc>
+  </url>
+
+
+  <!-- Специализированные работы -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/barite-plaster-xray-protection-kazakhstan.html</loc>
+  </url>
+
+
+  <!-- Региональные страницы -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/almaty.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/astana.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/atyrau.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/aktau.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/karaganda.html</loc>
+  </url>
+
+
+  <!-- Блог -->
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/blog.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/kak-vybrat-sendvich-paneli.html</loc>
+  </url>
+
+  <url>
+    <loc>https://panelmontage-site.github.io/panelmontage-site/oshibki-montazha-sendvich-paneley.html</loc>
+  </url>
 
 </urlset>
