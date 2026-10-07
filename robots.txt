@@ -1,4 +1,33 @@
+# PANEL MONTAGE
+# https://panelmontage-site.github.io/panelmontage-site/
+
+# All standard search engines
 User-agent: *
 Allow: /
 
+# Google Search
+User-agent: Googlebot
+Allow: /
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+
+# OpenAI / ChatGPT Search
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI crawler
+User-agent: GPTBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Sitemap
 Sitemap: https://panelmontage-site.github.io/panelmontage-site/sitemap.xml
