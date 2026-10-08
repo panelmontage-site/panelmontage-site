@@ -1,0 +1,48 @@
+name: IndexNow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Submit changed HTML pages to IndexNow
+        env:
+          INDEXNOW_KEY: f82096a39cc54d04be7840166bb30ca9
+          SITE_URL: https://panelmontage-site.github.io/panelmontage-site
+        run: |
+          set -e
+
+          echo "Finding changed HTML files..."
+
+          git diff --name-only HEAD^ HEAD \
+            | grep -E '\.html$' \
+            | while read file; do
+
+              if [ -f "$file" ]; then
+                url="$SITE_URL/${file#./}"
+
+                echo "Submitting: $url"
+
+                curl -sS -X POST "https://api.indexnow.org/indexnow" \
+                  -H "Content-Type: application/json; charset=utf-8" \
+                  -d "{
+                    \"host\": \"panelmontage-site.github.io\",
+                    \"key\": \"$INDEXNOW_KEY\",
+                    \"keyLocation\": \"$SITE_URL/$INDEXNOW_KEY.txt\",
+                    \"urlList\": [\"$url\"]
+                  }"
+
+                echo
+              fi
+
+            done
